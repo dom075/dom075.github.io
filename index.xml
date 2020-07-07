@@ -12,12 +12,13 @@
     
     
     <item>
-      <title>P</title>
-      <link>https://dom075.github.io/python/p/</link>
+      <title>Python 100天 第1天</title>
+      <link>https://dom075.github.io/python/python_100%E5%A4%A9_%E7%AC%AC1%E5%A4%A9/</link>
       <pubDate>Tue, 07 Jul 2020 11:35:34 +0800</pubDate>
       
-      <guid>https://dom075.github.io/python/p/</guid>
-      <description>Python is good</description>
+      <guid>https://dom075.github.io/python/python_100%E5%A4%A9_%E7%AC%AC1%E5%A4%A9/</guid>
+      <description>Python特点  解释型语言，对两种主流的编程范式（面向对象和函数式编程）都提供支持。 执行效率较低，代码无法加密。 开发时可选择的框架太多。  安装Python解释器 可以在Python官网下载。
+安装过程网上很多，查一下就行。</description>
     </item>
     
     <item>
