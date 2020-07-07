@@ -6,10 +6,19 @@
     <description>Recent content on Jed Wu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jul 2020 11:35:34 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2020 17:51:56 +0800</lastBuildDate>
     
 	<atom:link href="https://dom075.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>P</title>
+      <link>https://dom075.github.io/python/p/</link>
+      <pubDate>Tue, 07 Jul 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/p/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Python 100天 第1天</title>
