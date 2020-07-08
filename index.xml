@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>最新文章 on Jed Wu</title>
+    <title>Jed Wu</title>
     <link>https://dom075.github.io/</link>
-    <description>Recent content in 最新文章 on Jed Wu</description>
+    <description>Recent content on Jed Wu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jul 2020 18:11:11 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2020 16:45:09 +0800</lastBuildDate>
     
 	<atom:link href="https://dom075.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,6 +18,15 @@
       
       <guid>https://dom075.github.io/java/java/</guid>
       <description>java is good</description>
+    </item>
+    
+    <item>
+      <title>Python 第6天 方法</title>
+      <link>https://dom075.github.io/python/day01_15/python_%E7%AC%AC6%E5%A4%A9_%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 06 Jul 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/day01_15/python_%E7%AC%AC6%E5%A4%A9_%E6%96%B9%E6%B3%95/</guid>
+      <description>方法 方法定义  用def关键字来申明方法。  def fac(num): result = 1 for n in range(1, num + 1): result *= n return result m = int(input(&amp;#39;m = &amp;#39;)) n = int(input(&amp;#39;n = &amp;#39;)) print(fac(m) // fac(n) // fac(m - n)) Python可以重复定义方法（后面的声明覆盖前面的声明），调用时选取最后的声明。  def foo(): print(&amp;#39;hello, world!</description>
     </item>
     
     <item>
