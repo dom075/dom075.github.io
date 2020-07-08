@@ -5,25 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.73.0" />
 
-  <title>Python &middot; Jed Wu</title>
+  <title>Python 第5天 from import &middot; Jed Wu</title>
 
   <meta name="description" content="" />
 
   
 
-<meta itemprop="name" content="Python">
-<meta itemprop="description" content="个人技术博客">
+<meta itemprop="name" content="Python 第5天 from import">
+<meta itemprop="description" content="import 和 from import的区别 两个import语义有差异
+import datetime print(datetime.datetime.now()) 是引入整个datetime包">
+<meta itemprop="datePublished" content="2020-07-05T17:51:56&#43;08:00" />
+<meta itemprop="dateModified" content="2020-07-05T17:51:56&#43;08:00" />
+<meta itemprop="wordCount" content="17">
+
+
+
+<meta itemprop="keywords" content="" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Python"/>
-<meta name="twitter:description" content="个人技术博客"/>
+<meta name="twitter:title" content="Python 第5天 from import"/>
+<meta name="twitter:description" content="import 和 from import的区别 两个import语义有差异
+import datetime print(datetime.datetime.now()) 是引入整个datetime包"/>
 
 
-<meta property="og:title" content="Python" />
-<meta property="og:description" content="个人技术博客" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://dom075.github.io/python/" />
-<meta property="og:updated_time" content="2020-07-07T18:12:25+08:00" />
+<meta property="og:title" content="Python 第5天 from import" />
+<meta property="og:description" content="import 和 from import的区别 两个import语义有差异
+import datetime print(datetime.datetime.now()) 是引入整个datetime包" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dom075.github.io/python/day01_15/python_%E7%AC%AC5%E5%A4%A9_from_import/" />
+<meta property="article:published_time" content="2020-07-05T17:51:56+08:00" />
+<meta property="article:modified_time" content="2020-07-05T17:51:56+08:00" />
 
 
 
@@ -60,7 +71,6 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://dom075.github.io/python/index.xml" rel="alternate" type="application/rss+xml" title="Jed Wu" />
   </head>
 <body>
   <aside class="sidebar">
@@ -116,15 +126,27 @@
 
 
   <main class="content container">
-  <ul class="posts">
-  <h1>Python</h1>
-  <li>
-    <span>
-        <a href="https://dom075.github.io/python/day01_15/">Day01_15</a>
-        
-    </span>
-  </li>
-</ul>
+  <div class="post">
+  <h1>Python 第5天 from import</h1>
+
+  <div class="post-date">
+    <time datetime="2020-07-05T17:51:56&#43;0800">Jul 5, 2020</time> &middot; 1 min read
+  </div>
+
+  <hr>
+<h2 id="import-和-from-import的区别">import 和 from import的区别</h2>
+<p>两个import语义有差异</p>
+<pre><code>import datetime  
+print(datetime.datetime.now())  
+</code></pre><p>是引入整个datetime包</p>
+<pre><code>from datetime import datetime
+print(datetime.now())
+</code></pre><p>是只引入datetime包里的datetime类<br>
+所以import之后前者是datetime这个包可见 后者是datetime.datetime这个类可见。</p>
+
+</div>
+
+
   </main>
 
   <footer>
