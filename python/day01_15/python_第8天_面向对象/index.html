@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.73.0" />
+
+  <title>Python 第8天 面向对象 &middot; Jed Wu</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Python 第8天 面向对象">
+<meta itemprop="description" content="类 类的基本操作示例 （以下student的属性和方法都是public的）
+class Student(object): # __init__是一个特殊方法用于在创建对象时进行初始化操作 # 通过这个方法我们可以为学生对象绑定name和age两个属性 def __init__(self, name, age): self.">
+<meta itemprop="datePublished" content="2020-07-08T17:51:56&#43;08:00" />
+<meta itemprop="dateModified" content="2020-07-08T17:51:56&#43;08:00" />
+<meta itemprop="wordCount" content="111">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python 第8天 面向对象"/>
+<meta name="twitter:description" content="类 类的基本操作示例 （以下student的属性和方法都是public的）
+class Student(object): # __init__是一个特殊方法用于在创建对象时进行初始化操作 # 通过这个方法我们可以为学生对象绑定name和age两个属性 def __init__(self, name, age): self."/>
+
+
+<meta property="og:title" content="Python 第8天 面向对象" />
+<meta property="og:description" content="类 类的基本操作示例 （以下student的属性和方法都是public的）
+class Student(object): # __init__是一个特殊方法用于在创建对象时进行初始化操作 # 通过这个方法我们可以为学生对象绑定name和age两个属性 def __init__(self, name, age): self." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dom075.github.io/python/day01_15/python_%E7%AC%AC8%E5%A4%A9_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" />
+<meta property="article:published_time" content="2020-07-08T17:51:56+08:00" />
+<meta property="article:modified_time" content="2020-07-08T17:51:56+08:00" />
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <img src="/images/profile/Jed_Wu_Cartoon.JPG" class="img-circle img-headshot center" alt="Profile Picture">
+        </div>
+        
+      
+
+      <h1>Jed Wu</h1>
+
+      
+      <p class="lead">个人技术博客</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://dom075.github.io/">Home</a>
+        </li>
+        <li>
+          <a href="/java/">Java</a>
+        </li><li>
+          <a href="/python/">Python</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="#" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1>Python 第8天 面向对象</h1>
+
+  <div class="post-date">
+    <time datetime="2020-07-08T17:51:56&#43;0800">Jul 8, 2020</time> &middot; 1 min read
+  </div>
+
+  <hr>
+<h2 id="类">类</h2>
+<p>类的基本操作示例
+（以下student的属性和方法都是public的）</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Student</span>(object):
+
+    <span style="color:#75715e"># __init__是一个特殊方法用于在创建对象时进行初始化操作</span>
+    <span style="color:#75715e"># 通过这个方法我们可以为学生对象绑定name和age两个属性</span>
+    <span style="color:#66d9ef">def</span> __init__(self, name, age):
+        self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
+        self<span style="color:#f92672">.</span>age <span style="color:#f92672">=</span> age
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">study</span>(self, course_name):
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">正在学习</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">.&#39;</span> <span style="color:#f92672">%</span> (self<span style="color:#f92672">.</span>name, course_name))
+
+    <span style="color:#75715e"># PEP 8要求标识符的名字用全小写多个单词用下划线连接</span>
+    <span style="color:#75715e"># 但是部分程序员和公司更倾向于使用驼峰命名法(驼峰标识)</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">watch_movie</span>(self):
+        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>age <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">18</span>:
+            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">只能观看《熊出没》.&#39;</span> <span style="color:#f92672">%</span> self<span style="color:#f92672">.</span>name)
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">正在观看岛国爱情大电影.&#39;</span> <span style="color:#f92672">%</span> self<span style="color:#f92672">.</span>name)
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+    <span style="color:#75715e"># 创建学生对象并指定姓名和年龄</span>
+    stu1 <span style="color:#f92672">=</span> Student(<span style="color:#e6db74">&#39;骆昊&#39;</span>, <span style="color:#ae81ff">38</span>)
+    <span style="color:#75715e"># 给对象发study消息</span>
+    stu1<span style="color:#f92672">.</span>study(<span style="color:#e6db74">&#39;Python程序设计&#39;</span>)
+    <span style="color:#75715e"># 给对象发watch_av消息</span>
+    stu1<span style="color:#f92672">.</span>watch_movie()
+    stu2 <span style="color:#f92672">=</span> Student(<span style="color:#e6db74">&#39;王大锤&#39;</span>, <span style="color:#ae81ff">15</span>)
+    stu2<span style="color:#f92672">.</span>study(<span style="color:#e6db74">&#39;思想品德&#39;</span>)
+    stu2<span style="color:#f92672">.</span>watch_movie()
+
+
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+    main()            
+</code></pre></div><p>private的属性和方法<br>
+(前面加两个下划线，但是这种做法并不是语法上的规则，单下划线开头的属性和方法外界仍然是可以访问的)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test</span>:
+
+    <span style="color:#66d9ef">def</span> __init__(self, foo):
+        self<span style="color:#f92672">.</span>__foo <span style="color:#f92672">=</span> foo
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__bar</span>(self):
+        <span style="color:#66d9ef">print</span>(self<span style="color:#f92672">.</span>__foo)
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;__bar&#39;</span>)
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+    test <span style="color:#f92672">=</span> Test(<span style="color:#e6db74">&#39;hello&#39;</span>)
+    <span style="color:#75715e"># AttributeError: &#39;Test&#39; object has no attribute &#39;__bar&#39;</span>
+    test<span style="color:#f92672">.</span>__bar()
+    <span style="color:#75715e"># AttributeError: &#39;Test&#39; object has no attribute &#39;__foo&#39;</span>
+    <span style="color:#66d9ef">print</span>(test<span style="color:#f92672">.</span>__foo)
+
+
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+    main()
+</code></pre></div>
+</div>
+
+
+  </main>
+
+  <footer>
+  <div>
+    &copy; Jed Wu 2020
+
+    &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+    
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>
