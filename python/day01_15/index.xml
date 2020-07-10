@@ -12,9 +12,18 @@
     
     
     <item>
+      <title>Python 第11天 读写文件和Json</title>
+      <link>https://dom075.github.io/python/day01_15/python_%E7%AC%AC11%E5%A4%A9_%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6%E5%92%8Cjson/</link>
+      <pubDate>Thu, 11 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/day01_15/python_%E7%AC%AC11%E5%A4%A9_%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6%E5%92%8Cjson/</guid>
+      <description>open方法    操作模式 具体含义     &#39;r&#39; 读取 （默认）   &#39;w&#39; 写入（会先截断之前的内容）   &#39;x&#39; 写入，如果文件已经存在会产生异常   &#39;a&#39; 追加，将内容写入到已有文件的末尾   &#39;b&#39; 二进制模式   &#39;t&#39; 文本模式（默认）   &#39;+&#39; 更新（既可以读又可以写）    读取文件内容 def main(): f = None try: f = open(&amp;#39;C:\Blog\Python\Python_第3天_If.</description>
+    </item>
+    
+    <item>
       <title>Python 第10天 GUI</title>
       <link>https://dom075.github.io/python/day01_15/python_%E7%AC%AC10%E5%A4%A9_gui/</link>
-      <pubDate>Fri, 10 Jul 2020 17:51:56 +0800</pubDate>
+      <pubDate>Wed, 10 Jun 2020 17:51:56 +0800</pubDate>
       
       <guid>https://dom075.github.io/python/day01_15/python_%E7%AC%AC10%E5%A4%A9_gui/</guid>
       <description>thinter组件 步骤：
@@ -24,7 +33,7 @@
     <item>
       <title>Python 第9天 面向对象进阶</title>
       <link>https://dom075.github.io/python/day01_15/python_%E7%AC%AC9%E5%A4%A9_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6/</link>
-      <pubDate>Thu, 09 Jul 2020 17:51:56 +0800</pubDate>
+      <pubDate>Tue, 09 Jun 2020 17:51:56 +0800</pubDate>
       
       <guid>https://dom075.github.io/python/day01_15/python_%E7%AC%AC9%E5%A4%A9_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6/</guid>
       <description>@property装饰器 就是getter（访问器）、setter（修改器）
@@ -34,7 +43,7 @@ class Person(object): def __init__(self, name, age): self._name = name self.</de
     <item>
       <title>Python 第8天 面向对象</title>
       <link>https://dom075.github.io/python/day01_15/python_%E7%AC%AC8%E5%A4%A9_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
-      <pubDate>Wed, 08 Jul 2020 17:51:56 +0800</pubDate>
+      <pubDate>Mon, 08 Jun 2020 17:51:56 +0800</pubDate>
       
       <guid>https://dom075.github.io/python/day01_15/python_%E7%AC%AC8%E5%A4%A9_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</guid>
       <description>类 类的基本操作示例 （以下student的属性和方法都是public的）
@@ -44,7 +53,7 @@ class Student(object): # __init__是一个特殊方法用于在创建对象时�
     <item>
       <title>Python 第7天 数据结构</title>
       <link>https://dom075.github.io/python/day01_15/python_%E7%AC%AC7%E5%A4%A9_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
-      <pubDate>Tue, 07 Jul 2020 17:51:56 +0800</pubDate>
+      <pubDate>Sun, 07 Jun 2020 17:51:56 +0800</pubDate>
       
       <guid>https://dom075.github.io/python/day01_15/python_%E7%AC%AC7%E5%A4%A9_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
       <description>字符串  转义符&amp;rsquo;\&#39;,要让字符串中的转义符&amp;rsquo;\&amp;lsquo;不代表转义符，只是单纯的斜杠，要在字符串前加&amp;rsquo;r&amp;rsquo;.  s1 = r&amp;#39;\&amp;#39;hello, world!\&amp;#39;&amp;#39; s2 = r&amp;#39;\n\\hello, world!</description>
@@ -53,7 +62,7 @@ class Student(object): # __init__是一个特殊方法用于在创建对象时�
     <item>
       <title>Python 第6天 方法</title>
       <link>https://dom075.github.io/python/day01_15/python_%E7%AC%AC6%E5%A4%A9_%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Mon, 06 Jul 2020 17:51:56 +0800</pubDate>
+      <pubDate>Sat, 06 Jun 2020 17:51:56 +0800</pubDate>
       
       <guid>https://dom075.github.io/python/day01_15/python_%E7%AC%AC6%E5%A4%A9_%E6%96%B9%E6%B3%95/</guid>
       <description>方法 方法定义  用def关键字来申明方法。  def fac(num): result = 1 for n in range(1, num + 1): result *= n return result m = int(input(&amp;#39;m = &amp;#39;)) n = int(input(&amp;#39;n = &amp;#39;)) print(fac(m) // fac(n) // fac(m - n)) Python可以重复定义方法（后面的声明覆盖前面的声明），调用时选取最后的声明。  def foo(): print(&amp;#39;hello, world!</description>
@@ -62,7 +71,7 @@ class Student(object): # __init__是一个特殊方法用于在创建对象时�
     <item>
       <title>Python 第5天 from import</title>
       <link>https://dom075.github.io/python/day01_15/python_%E7%AC%AC5%E5%A4%A9_from_import/</link>
-      <pubDate>Sun, 05 Jul 2020 17:51:56 +0800</pubDate>
+      <pubDate>Fri, 05 Jun 2020 17:51:56 +0800</pubDate>
       
       <guid>https://dom075.github.io/python/day01_15/python_%E7%AC%AC5%E5%A4%A9_from_import/</guid>
       <description>import 和 from import的区别 两个import语义有差异
@@ -72,7 +81,7 @@ import datetime print(datetime.datetime.now()) 是引入整个datetime包</descr
     <item>
       <title>Python 第4天 for循环</title>
       <link>https://dom075.github.io/python/day01_15/python_%E7%AC%AC4%E5%A4%A9_for%E5%BE%AA%E7%8E%AF/</link>
-      <pubDate>Sat, 04 Jul 2020 17:51:56 +0800</pubDate>
+      <pubDate>Thu, 04 Jun 2020 17:51:56 +0800</pubDate>
       
       <guid>https://dom075.github.io/python/day01_15/python_%E7%AC%AC4%E5%A4%A9_for%E5%BE%AA%E7%8E%AF/</guid>
       <description>for-in循环 sum = 0 for x in range(101): sum += x print(sum) &amp;#39;一次性抽出index和element&amp;#39; for index, elem in enumerate(list1): print(index, elem) while循环 用break退出，continue跳到下一个循环。</description>
@@ -81,7 +90,7 @@ import datetime print(datetime.datetime.now()) 是引入整个datetime包</descr
     <item>
       <title>Python 第3天 If</title>
       <link>https://dom075.github.io/python/day01_15/python_%E7%AC%AC3%E5%A4%A9_if/</link>
-      <pubDate>Fri, 03 Jul 2020 17:51:56 +0800</pubDate>
+      <pubDate>Wed, 03 Jun 2020 17:51:56 +0800</pubDate>
       
       <guid>https://dom075.github.io/python/day01_15/python_%E7%AC%AC3%E5%A4%A9_if/</guid>
       <description> If语句 Python 没有花括号，用缩进来表示层次。（一般用四个空格而不是Tab）。
@@ -91,7 +100,7 @@ if x &amp;gt; 1: y = 3 * x - 5 elif x &amp;gt;= -1: y = x + 2 else: y = 5 * x + 
     <item>
       <title>Python 第2天 变量</title>
       <link>https://dom075.github.io/python/day01_15/python_%E7%AC%AC2%E5%A4%A9_%E5%8F%98%E9%87%8F/</link>
-      <pubDate>Thu, 02 Jul 2020 17:51:56 +0800</pubDate>
+      <pubDate>Tue, 02 Jun 2020 17:51:56 +0800</pubDate>
       
       <guid>https://dom075.github.io/python/day01_15/python_%E7%AC%AC2%E5%A4%A9_%E5%8F%98%E9%87%8F/</guid>
       <description>Python常用变量  整型： Python 3.x之后只有int了，可以处理任意大小的整数，同时也支持二进制、八进制、十六进制等等。 浮点型： 小数（支持一般的122.45和科学计数法 1.2e2）. 字符串： &amp;lsquo;hello&amp;rsquo; &amp;ldquo;hello&amp;rdquo; 多行要用三个单引号或双引号。 布尔型： True / False 或 2 == 1 这种运算  变量命名  不能数字开头  运算符 略（常用的那些，没啥好讲）</description>
@@ -100,7 +109,7 @@ if x &amp;gt; 1: y = 3 * x - 5 elif x &amp;gt;= -1: y = x + 2 else: y = 5 * x + 
     <item>
       <title>Python 第1天 HelloWorld</title>
       <link>https://dom075.github.io/python/day01_15/python_%E7%AC%AC1%E5%A4%A9_helloworld/</link>
-      <pubDate>Wed, 01 Jul 2020 11:35:34 +0800</pubDate>
+      <pubDate>Mon, 01 Jun 2020 11:35:34 +0800</pubDate>
       
       <guid>https://dom075.github.io/python/day01_15/python_%E7%AC%AC1%E5%A4%A9_helloworld/</guid>
       <description>Python特点  解释型语言，对两种主流的编程范式（面向对象和函数式编程）都提供支持。 执行效率较低，代码无法加密。 开发时可选择的框架太多。  安装Python解释器 可以在Python官网下载。
