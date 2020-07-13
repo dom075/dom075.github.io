@@ -12,10 +12,11 @@
   
 
 <meta itemprop="name" content="Python 第7天 数据结构">
-<meta itemprop="description" content="字符串  转义符&rsquo;\&#39;,要让字符串中的转义符&rsquo;\&lsquo;不代表转义符，只是单纯的斜杠，要在字符串前加&rsquo;r&rsquo;.  s1 = r&#39;\&#39;hello, world!\&#39;&#39; s2 = r&#39;\n\\hello, world!">
+<meta itemprop="description" content="字符串 对于字符串，最重要的一点是，字符串是不可变对象，如下代码输出的依然是abc，a没有被替换。
+a = &#39;abc&#39; a.replace(&#39;a&#39;,&#39;A&#39;) print(a) #输出：abc 为什么呢，因为a是变量，&lsquo;abc&rsquo;才是字符串对象。a.replace只是把替换了A之后返回出去&rsquo;Abc&rsquo;这个对象，元对象&rsquo;abc&rsquo;没有变动。对比以下代码：">
 <meta itemprop="datePublished" content="2020-06-07T17:51:56&#43;08:00" />
 <meta itemprop="dateModified" content="2020-06-07T17:51:56&#43;08:00" />
-<meta itemprop="wordCount" content="819">
+<meta itemprop="wordCount" content="1129">
 
 
 
@@ -23,11 +24,13 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Python 第7天 数据结构"/>
-<meta name="twitter:description" content="字符串  转义符&rsquo;\&#39;,要让字符串中的转义符&rsquo;\&lsquo;不代表转义符，只是单纯的斜杠，要在字符串前加&rsquo;r&rsquo;.  s1 = r&#39;\&#39;hello, world!\&#39;&#39; s2 = r&#39;\n\\hello, world!"/>
+<meta name="twitter:description" content="字符串 对于字符串，最重要的一点是，字符串是不可变对象，如下代码输出的依然是abc，a没有被替换。
+a = &#39;abc&#39; a.replace(&#39;a&#39;,&#39;A&#39;) print(a) #输出：abc 为什么呢，因为a是变量，&lsquo;abc&rsquo;才是字符串对象。a.replace只是把替换了A之后返回出去&rsquo;Abc&rsquo;这个对象，元对象&rsquo;abc&rsquo;没有变动。对比以下代码："/>
 
 
 <meta property="og:title" content="Python 第7天 数据结构" />
-<meta property="og:description" content="字符串  转义符&rsquo;\&#39;,要让字符串中的转义符&rsquo;\&lsquo;不代表转义符，只是单纯的斜杠，要在字符串前加&rsquo;r&rsquo;.  s1 = r&#39;\&#39;hello, world!\&#39;&#39; s2 = r&#39;\n\\hello, world!" />
+<meta property="og:description" content="字符串 对于字符串，最重要的一点是，字符串是不可变对象，如下代码输出的依然是abc，a没有被替换。
+a = &#39;abc&#39; a.replace(&#39;a&#39;,&#39;A&#39;) print(a) #输出：abc 为什么呢，因为a是变量，&lsquo;abc&rsquo;才是字符串对象。a.replace只是把替换了A之后返回出去&rsquo;Abc&rsquo;这个对象，元对象&rsquo;abc&rsquo;没有变动。对比以下代码：" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dom075.github.io/python/day01_15/python_%E7%AC%AC7%E5%A4%A9_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" />
 <meta property="article:published_time" content="2020-06-07T17:51:56+08:00" />
@@ -127,13 +130,21 @@
   <h1>Python 第7天 数据结构</h1>
 
   <div class="post-date">
-    <time datetime="2020-06-07T17:51:56&#43;0800">Jun 7, 2020</time> &middot; 4 min read
+    <time datetime="2020-06-07T17:51:56&#43;0800">Jun 7, 2020</time> &middot; 6 min read
   </div>
 
   <hr>
 <h2 id="字符串">字符串</h2>
-<ul>
-<li>转义符&rsquo;\',要让字符串中的转义符&rsquo;\&lsquo;不代表转义符，只是单纯的斜杠，要在字符串前加&rsquo;r&rsquo;.</li>
+<p>对于字符串，最重要的一点是，字符串是不可变对象，如下代码输出的依然是abc，a没有被替换。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;abc&#39;</span> 
+a<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;a&#39;</span>,<span style="color:#e6db74">&#39;A&#39;</span>)
+<span style="color:#66d9ef">print</span>(a) <span style="color:#75715e">#输出：abc</span>
+</code></pre></div><p>为什么呢，因为a是变量，&lsquo;abc&rsquo;才是字符串对象。a.replace只是把替换了A之后返回出去&rsquo;Abc&rsquo;这个对象，元对象&rsquo;abc&rsquo;没有变动。对比以下代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;abc&#39;</span> 
+b <span style="color:#f92672">=</span> a<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;a&#39;</span>,<span style="color:#e6db74">&#39;A&#39;</span>)
+<span style="color:#66d9ef">print</span>(b) <span style="color:#75715e">#输出：Abc</span>
+</code></pre></div><ul>
+<li>转义符&rsquo;\',要让字符串中的转义符&rsquo;\&lsquo;不代表转义符，只是单纯的斜杠，要在字符串前加&rsquo;r&rsquo;，这个叫原始字符串。</li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s1 <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">hello, world!</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">&#39;</span>
 s2 <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;\n</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">hello, world!</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">\n&#39;</span>
@@ -199,7 +210,8 @@ str3 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;  jac
 <span style="color:#75715e"># 获得字符串修剪左右两侧空格之后的拷贝</span>
 <span style="color:#66d9ef">print</span>(str3<span style="color:#f92672">.</span>strip())
 </code></pre></div><ul>
-<li>占位符： %d %s 或 {0} {1} {2}</li>
+<li>占位符： %d %s %f 或 {0} {1} {2}<br>
+<strong>有关%d %s %f详情见底部<a href="##%E9%99%841">附1</a></strong></li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a, b <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>
 <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> * </span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> = </span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span> (a, b, a <span style="color:#f92672">*</span> b))
@@ -258,7 +270,12 @@ list1<span style="color:#f92672">.</span>pop(len(list1) <span style="color:#f926
 <span style="color:#75715e"># 清空列表元素</span>
 list1<span style="color:#f92672">.</span>clear()
 <span style="color:#66d9ef">print</span>(list1) <span style="color:#75715e"># []</span>
-</code></pre></div><p>List切片</p>
+</code></pre></div><p>List切片<br>
+L[0:3]表示，从索引0开始取，直到索引3为止，但不包括索引3,如果第一个索引是0.还可以省略成L[:3]
+L[-1]：取倒数第一个元素
+L[-2:-1]:从倒数第二到倒数第一，且不包括倒数第一
+L[:10:2]:前10个数，每两个取一个
+L[::5]:所有数，每5个取一个</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">fruits <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;grape&#39;</span>, <span style="color:#e6db74">&#39;apple&#39;</span>, <span style="color:#e6db74">&#39;strawberry&#39;</span>, <span style="color:#e6db74">&#39;waxberry&#39;</span>]
 fruits <span style="color:#f92672">+=</span> [<span style="color:#e6db74">&#39;pitaya&#39;</span>, <span style="color:#e6db74">&#39;pear&#39;</span>, <span style="color:#e6db74">&#39;mango&#39;</span>]
 <span style="color:#75715e"># 列表切片</span>
@@ -337,7 +354,9 @@ fruits_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#
 fruits_tuple <span style="color:#f92672">=</span> tuple(fruits_list)
 <span style="color:#66d9ef">print</span>(fruits_tuple)
 </code></pre></div><h2 id="集合set">集合（set）</h2>
-<p>集合中也不允许有重复元素<br>
+<p>集合中不允许有重复元素<br>
+set可以看成数学意义上的无序和无重复元素的集合<br>
+set和dict的唯一区别仅在于没有存储对应的value<br>
 创建集合：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 创建集合的字面量语法</span>
 set1 <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>}
@@ -414,7 +433,125 @@ scores<span style="color:#f92672">.</span>update(<span style="color:#960050;back
 <span style="color:#75715e"># 清空字典</span>
 scores<span style="color:#f92672">.</span>clear()
 <span style="color:#66d9ef">print</span>(scores)
-</code></pre></div>
+</code></pre></div><p>dict中的get方法，如果get的Key不存在，就返回none（交互环境中不显示任何信息），这时候也可以指定返回一个value：（上面Get武则天也是一样）</p>
+<pre><code>&gt;&gt;&gt; d.get('Thomas')
+&gt;&gt;&gt; d.get('Thomas', -1)
+-1
+</code></pre><p>和list比较，dict有以下几个特点：</p>
+<p>查找和插入的速度极快，不会随着key的增加而变慢；
+需要占用大量的内存，内存浪费多。
+而list相反：</p>
+<p>查找和插入的时间随着元素的增加而增加；
+占用空间小，浪费内存很少。
+所以，dict是用空间来换取时间的一种方法</p>
+<h2 id="附1">附1</h2>
+<p>%s String占位符</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">string<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hello&#34;</span>  
+  
+<span style="color:#75715e">#%s打印时结果是hello  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;string=</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> string      <span style="color:#75715e"># output: string=hello  </span>
+  
+<span style="color:#75715e">#%2s意思是字符串长度为2，当原字符串的长度超过2时，按原长度打印，所以%2s的打印结果还是hello  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;string=</span><span style="color:#e6db74">%2s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> string     <span style="color:#75715e"># output: string=hello  </span>
+  
+<span style="color:#75715e">#%7s意思是字符串长度为7，当原字符串的长度小于7时，在原字符串左侧补空格，  </span>
+<span style="color:#75715e">#所以%7s的打印结果是  hello  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;string=</span><span style="color:#e6db74">%7s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> string     <span style="color:#75715e"># output: string=  hello  </span>
+  
+<span style="color:#75715e">#%-7s意思是字符串长度为7，当原字符串的长度小于7时，在原字符串右侧补空格，  </span>
+<span style="color:#75715e">#所以%-7s的打印结果是  hello  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;string=</span><span style="color:#e6db74">%-7s</span><span style="color:#e6db74">!&#34;</span> <span style="color:#f92672">%</span> string     <span style="color:#75715e"># output: string=hello  !  </span>
+  
+<span style="color:#75715e">#%.2s意思是截取字符串的前2个字符，所以%.2s的打印结果是he  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;string=</span><span style="color:#e6db74">%.2s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> string    <span style="color:#75715e"># output: string=he  </span>
+  
+<span style="color:#75715e">#%.7s意思是截取字符串的前7个字符，当原字符串长度小于7时，即是字符串本身，  </span>
+<span style="color:#75715e">#所以%.7s的打印结果是hello  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;string=</span><span style="color:#e6db74">%.7s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> string    <span style="color:#75715e"># output: string=hello  </span>
+  
+<span style="color:#75715e">#%a.bs这种格式是上面两种格式的综合，首先根据小数点后面的数b截取字符串，  </span>
+<span style="color:#75715e">#当截取的字符串长度小于a时，还需要在其左侧补空格  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;string=</span><span style="color:#e6db74">%7.2s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> string   <span style="color:#75715e"># output: string=     he  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;string=</span><span style="color:#e6db74">%2.7s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> string   <span style="color:#75715e"># output: string=hello  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;string=</span><span style="color:#e6db74">%10.7s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> string  <span style="color:#75715e"># output: string=     hello  </span>
+  
+<span style="color:#75715e">#还可以用%*.*s来表示精度，两个*的值分别在后面小括号的前两位数值指定  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;string=</span><span style="color:#e6db74">%*.*s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> (<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">2</span>,string)      <span style="color:#75715e"># output: string=     he  </span>
+</code></pre></div><p>%d 整数占位符</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">num<span style="color:#f92672">=</span><span style="color:#ae81ff">14</span>  
+  
+<span style="color:#75715e">#%d打印时结果是14  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;num=</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> num            <span style="color:#75715e"># output: num=14  </span>
+  
+<span style="color:#75715e">#%1d意思是打印结果为1位整数，当整数的位数超过1位时，按整数原值打印，所以%1d的打印结果还是14  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;num=</span><span style="color:#e6db74">%1d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> num           <span style="color:#75715e"># output: num=14  </span>
+  
+<span style="color:#75715e">#%3d意思是打印结果为3位整数，当整数的位数不够3位时，在整数左侧补空格，所以%3d的打印结果是 14  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;num=</span><span style="color:#e6db74">%3d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> num           <span style="color:#75715e"># output: num= 14  </span>
+  
+<span style="color:#75715e">#%-3d意思是打印结果为3位整数，当整数的位数不够3位时，在整数右侧补空格，所以%3d的打印结果是14_  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;num=</span><span style="color:#e6db74">%-3d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> num          <span style="color:#75715e"># output: num=14_  </span>
+  
+<span style="color:#75715e">#%05d意思是打印结果为5位整数，当整数的位数不够5位时，在整数左侧补0，所以%05d的打印结果是00014  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;num=</span><span style="color:#e6db74">%05d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> num          <span style="color:#75715e"># output: num=00014  </span>
+  
+<span style="color:#75715e">#%.3d小数点后面的3意思是打印结果为3位整数，  </span>
+<span style="color:#75715e">#当整数的位数不够3位时，在整数左侧补0，所以%.3d的打印结果是014  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;num=</span><span style="color:#e6db74">%.3d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> num          <span style="color:#75715e"># output: num=014  </span>
+  
+<span style="color:#75715e">#%.0003d小数点后面的0003和3一样，都表示3，意思是打印结果为3位整数，  </span>
+<span style="color:#75715e">#当整数的位数不够3位时，在整数左侧补0，所以%.3d的打印结果还是014  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;num=</span><span style="color:#e6db74">%.0003d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> num       <span style="color:#75715e"># output: num=014  </span>
+  
+<span style="color:#75715e">#%5.3d是两种补齐方式的综合，当整数的位数不够3时，先在左侧补0，还是不够5位时，再在左侧补空格，  </span>
+<span style="color:#75715e">#规则就是补0优先，最终的长度选数值较大的那个，所以%5.3d的打印结果还是  014  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;num=</span><span style="color:#e6db74">%5.3d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> num         <span style="color:#75715e"># output: num=  014  </span>
+  
+<span style="color:#75715e">#%05.3d是两种补齐方式的综合，当整数的位数不够3时，先在左侧补0，还是不够5位时，  </span>
+<span style="color:#75715e">#由于是05，再在左侧补0，最终的长度选数值较大的那个，所以%05.3d的打印结果还是00014  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;num=</span><span style="color:#e6db74">%05.3d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> num        <span style="color:#75715e"># output: num=00014  </span>
+  
+<span style="color:#75715e">#还可以用%*.*d来表示精度，两个*的值分别在后面小括号的前两位数值指定  </span>
+<span style="color:#75715e">#如下，不过这种方式04就失去补0的功能，只能补空格，只有小数点后面的3才能补0  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;num=</span><span style="color:#e6db74">%*.*d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> (<span style="color:#ae81ff">04</span>,<span style="color:#ae81ff">3</span>,num)  <span style="color:#75715e"># output: num= 014  </span>
+</code></pre></div><p>%f 浮点型占位符</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math  
+  
+<span style="color:#75715e">#%a.bf，a表示浮点数的打印长度，b表示浮点数小数点后面的精度  </span>
+  
+<span style="color:#75715e">#只是%f时表示原值，默认是小数点后5位数  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;PI=</span><span style="color:#e6db74">%f</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> math<span style="color:#f92672">.</span>pi             <span style="color:#75715e"># output: PI=3.141593  </span>
+  
+<span style="color:#75715e">#只是%9f时，表示打印长度9位数，小数点也占一位，不够左侧补空格  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;PI=</span><span style="color:#e6db74">%9f</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> math<span style="color:#f92672">.</span>pi            <span style="color:#75715e"># output: PI=_3.141593  </span>
+  
+<span style="color:#75715e">#只有.没有后面的数字时，表示去掉小数输出整数，03表示不够3位数左侧补0  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;PI=%03.f&#34;</span> <span style="color:#f92672">%</span> math<span style="color:#f92672">.</span>pi          <span style="color:#75715e"># output: PI=003  </span>
+  
+<span style="color:#75715e">#%6.3f表示小数点后面精确到3位，总长度6位数，包括小数点，不够左侧补空格  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;PI=</span><span style="color:#e6db74">%6.3f</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> math<span style="color:#f92672">.</span>pi          <span style="color:#75715e"># output: PI=_3.142  </span>
+  
+<span style="color:#75715e">#%-6.3f表示小数点后面精确到3位，总长度6位数，包括小数点，不够右侧补空格  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;PI=</span><span style="color:#e6db74">%-6.3f</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> math<span style="color:#f92672">.</span>pi         <span style="color:#75715e"># output: PI=3.142_  </span>
+  
+<span style="color:#75715e">#还可以用%*.*f来表示精度，两个*的值分别在后面小括号的前两位数值指定  </span>
+<span style="color:#75715e">#如下，不过这种方式06就失去补0的功能，只能补空格  </span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;PI=</span><span style="color:#e6db74">%*.*f</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> (<span style="color:#ae81ff">06</span>,<span style="color:#ae81ff">3</span>,math<span style="color:#f92672">.</span>pi)   <span style="color:#75715e"># output: PI=_3.142  </span>
+</code></pre></div><h2 id="空值">空值</h2>
+<p>None，而不是Null</p>
+<h2 id="常量">常量</h2>
+<p>Python中没有常量，只用习惯上用全大写的变量来代表常量使用。当然也可以用Tuple元组，元组一旦初始化就不能变了。</p>
+<h2 id="用iterable来判断变量是否可迭代">用Iterable来判断变量是否可迭代</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> Iterable
+isinstance(<span style="color:#e6db74">&#39;abc&#39;</span>, Iterable) <span style="color:#75715e"># str是否可迭代</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> True
+isinstance([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>], Iterable) <span style="color:#75715e"># list是否可迭代</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> True
+isinstance(<span style="color:#ae81ff">123</span>, Iterable) <span style="color:#75715e"># 整数是否可迭代</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> False
+</code></pre></div><h2 id="enumerate">enumerate</h2>
+<p>Python中的List和Java中的list不一样，元素不带下标，</p>
+
 </div>
 
 

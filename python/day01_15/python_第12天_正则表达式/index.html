@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.73.0" />
+
+  <title>Python 第12天 正则表达式 &middot; Jed Wu</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Python 第12天 正则表达式">
+<meta itemprop="description" content="Python对正则表达式的支持 Python提供了re模块来支持正则表达式相关操作，下面是re模块中的核心函数。 | 函数 | 说明 | | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; | | compile(pattern, flags=0) | 编译正则表达式返回正则表达式对象 | | match(pattern, string, flags=0) | 用正则表达式匹配字符串 成功返回匹配对象 否则返回None | | search(pattern, string, flags=0) | 搜索字符串中第一次出现正则表达式的模式 成功返回匹配对象 否则返回None | | split(pattern, string, maxsplit=0, flags=0) | 用正则表达式指定的模式分隔符拆分字符串 返回列表 | | sub(pattern, repl, string, count=0, flags=0) | 用指定的字符串替换原字符串中与正则表达式匹配的模式 可以用count指定替换的次数 | | fullmatch(pattern, string, flags=0) | match函数的完全匹配（从字符串开头到结尾）版本 | | findall(pattern, string, flags=0) | 查找字符串所有与正则表达式匹配的模式 返回字符串的列表 | | finditer(pattern, string, flags=0) | 查找字符串所有与正则表达式匹配的模式 返回一个迭代器 | | purge() | 清除隐式编译的正则表达式的缓存 | | re.">
+<meta itemprop="datePublished" content="2020-06-12T17:51:56&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-12T17:51:56&#43;08:00" />
+<meta itemprop="wordCount" content="99">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python 第12天 正则表达式"/>
+<meta name="twitter:description" content="Python对正则表达式的支持 Python提供了re模块来支持正则表达式相关操作，下面是re模块中的核心函数。 | 函数 | 说明 | | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; | | compile(pattern, flags=0) | 编译正则表达式返回正则表达式对象 | | match(pattern, string, flags=0) | 用正则表达式匹配字符串 成功返回匹配对象 否则返回None | | search(pattern, string, flags=0) | 搜索字符串中第一次出现正则表达式的模式 成功返回匹配对象 否则返回None | | split(pattern, string, maxsplit=0, flags=0) | 用正则表达式指定的模式分隔符拆分字符串 返回列表 | | sub(pattern, repl, string, count=0, flags=0) | 用指定的字符串替换原字符串中与正则表达式匹配的模式 可以用count指定替换的次数 | | fullmatch(pattern, string, flags=0) | match函数的完全匹配（从字符串开头到结尾）版本 | | findall(pattern, string, flags=0) | 查找字符串所有与正则表达式匹配的模式 返回字符串的列表 | | finditer(pattern, string, flags=0) | 查找字符串所有与正则表达式匹配的模式 返回一个迭代器 | | purge() | 清除隐式编译的正则表达式的缓存 | | re."/>
+
+
+<meta property="og:title" content="Python 第12天 正则表达式" />
+<meta property="og:description" content="Python对正则表达式的支持 Python提供了re模块来支持正则表达式相关操作，下面是re模块中的核心函数。 | 函数 | 说明 | | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; | | compile(pattern, flags=0) | 编译正则表达式返回正则表达式对象 | | match(pattern, string, flags=0) | 用正则表达式匹配字符串 成功返回匹配对象 否则返回None | | search(pattern, string, flags=0) | 搜索字符串中第一次出现正则表达式的模式 成功返回匹配对象 否则返回None | | split(pattern, string, maxsplit=0, flags=0) | 用正则表达式指定的模式分隔符拆分字符串 返回列表 | | sub(pattern, repl, string, count=0, flags=0) | 用指定的字符串替换原字符串中与正则表达式匹配的模式 可以用count指定替换的次数 | | fullmatch(pattern, string, flags=0) | match函数的完全匹配（从字符串开头到结尾）版本 | | findall(pattern, string, flags=0) | 查找字符串所有与正则表达式匹配的模式 返回字符串的列表 | | finditer(pattern, string, flags=0) | 查找字符串所有与正则表达式匹配的模式 返回一个迭代器 | | purge() | 清除隐式编译的正则表达式的缓存 | | re." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dom075.github.io/python/day01_15/python_%E7%AC%AC12%E5%A4%A9_%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" />
+<meta property="article:published_time" content="2020-06-12T17:51:56+08:00" />
+<meta property="article:modified_time" content="2020-06-12T17:51:56+08:00" />
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <img src="/images/profile/Jed_Wu_Cartoon.JPG" class="img-circle img-headshot center" alt="Profile Picture">
+        </div>
+        
+      
+
+      <h1>Jed Wu</h1>
+
+      
+      <p class="lead">个人技术博客</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://dom075.github.io/">Home</a>
+        </li>
+        <li>
+          <a href="/java/">Java</a>
+        </li><li>
+          <a href="/python/">Python</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="#" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1>Python 第12天 正则表达式</h1>
+
+  <div class="post-date">
+    <time datetime="2020-06-12T17:51:56&#43;0800">Jun 12, 2020</time> &middot; 1 min read
+  </div>
+
+  <hr>
+<h2 id="python对正则表达式的支持">Python对正则表达式的支持</h2>
+<p>Python提供了re模块来支持正则表达式相关操作，下面是re模块中的核心函数。
+| 函数                                         | 说明                                                         |
+| &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; |
+| compile(pattern, flags=0)                    | 编译正则表达式返回正则表达式对象                             |
+| match(pattern, string, flags=0)              | 用正则表达式匹配字符串 成功返回匹配对象 否则返回None         |
+| search(pattern, string, flags=0)             | 搜索字符串中第一次出现正则表达式的模式 成功返回匹配对象 否则返回None |
+| split(pattern, string, maxsplit=0, flags=0)  | 用正则表达式指定的模式分隔符拆分字符串 返回列表              |
+| sub(pattern, repl, string, count=0, flags=0) | 用指定的字符串替换原字符串中与正则表达式匹配的模式 可以用count指定替换的次数 |
+| fullmatch(pattern, string, flags=0)          | match函数的完全匹配（从字符串开头到结尾）版本                |
+| findall(pattern, string, flags=0)            | 查找字符串所有与正则表达式匹配的模式 返回字符串的列表        |
+| finditer(pattern, string, flags=0)           | 查找字符串所有与正则表达式匹配的模式 返回一个迭代器          |
+| purge()                                      | 清除隐式编译的正则表达式的缓存                               |
+| re.I / re.IGNORECASE                         | 忽略大小写匹配标记                                           |
+| re.M / re.MULTILINE                          | 多行匹配标记                                                 |</p>
+<p>实际开发爬虫应用的时候，有很多人会选择<a href="https://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a>或<a href="http://lxml.de/">Lxml</a>来进行匹配和信息的提取，前者简单方便但是性能较差，后者既好用性能也好，但是安装稍嫌麻烦</p>
+
+</div>
+
+
+  </main>
+
+  <footer>
+  <div>
+    &copy; Jed Wu 2020
+
+    &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+    
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>

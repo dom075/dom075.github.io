@@ -15,7 +15,7 @@
 <meta itemprop="description" content="open方法    操作模式 具体含义     &#39;r&#39; 读取 （默认）   &#39;w&#39; 写入（会先截断之前的内容）   &#39;x&#39; 写入，如果文件已经存在会产生异常   &#39;a&#39; 追加，将内容写入到已有文件的末尾   &#39;b&#39; 二进制模式   &#39;t&#39; 文本模式（默认）   &#39;&#43;&#39; 更新（既可以读又可以写）    读取文件内容 def main(): f = None try: f = open(&#39;C:\Blog\Python\Python_第3天_If.">
 <meta itemprop="datePublished" content="2020-06-11T17:51:56&#43;08:00" />
 <meta itemprop="dateModified" content="2020-06-11T17:51:56&#43;08:00" />
-<meta itemprop="wordCount" content="270">
+<meta itemprop="wordCount" content="243">
 
 
 
@@ -239,16 +239,42 @@
 <span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
     main()
 </code></pre></div><h3 id="读写json文件">读写JSON文件</h3>
-<p>Json格式和Python格式的对应：
-| Python                                 | JSON         |
-| &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; | &mdash;&mdash;&mdash;&mdash; |
-| dict                                   | object       |
-| list, tuple                            | array        |
-| str                                    | string       |
-| int, float, int- &amp; float-derived Enums | number       |
-| True / False                           | true / false |
-| None                                   | null         |</p>
-<p>Json格式存储文件</p>
+<p>Json格式和Python格式的对应：</p>
+<table>
+<thead>
+<tr>
+<th>JSON</th>
+<th>Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>object</td>
+<td>dict</td>
+</tr>
+<tr>
+<td>array</td>
+<td>list</td>
+</tr>
+<tr>
+<td>string</td>
+<td>str</td>
+</tr>
+<tr>
+<td>number (int / real)</td>
+<td>int / float</td>
+</tr>
+<tr>
+<td>true / false</td>
+<td>True / False</td>
+</tr>
+<tr>
+<td>null</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="json格式存储文件">Json格式存储文件</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> json
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
     mydict <span style="color:#f92672">=</span> {

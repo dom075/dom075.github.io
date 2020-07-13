@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.73.0" />
+
+  <title>Python 第15天 操作图像和Office软件 &middot; Jed Wu</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Python 第15天 操作图像和Office软件">
+<meta itemprop="description" content="操作图像 用Pillow操作图像 &lsquo;pip install pillow&rsquo;
+&#34;展示图像&#34; &gt;&gt;&gt; from PIL import Image &gt;&gt;&gt; &gt;&gt;&gt; image = Image.">
+<meta itemprop="datePublished" content="2020-06-15T17:51:56&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-15T17:51:56&#43;08:00" />
+<meta itemprop="wordCount" content="145">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python 第15天 操作图像和Office软件"/>
+<meta name="twitter:description" content="操作图像 用Pillow操作图像 &lsquo;pip install pillow&rsquo;
+&#34;展示图像&#34; &gt;&gt;&gt; from PIL import Image &gt;&gt;&gt; &gt;&gt;&gt; image = Image."/>
+
+
+<meta property="og:title" content="Python 第15天 操作图像和Office软件" />
+<meta property="og:description" content="操作图像 用Pillow操作图像 &lsquo;pip install pillow&rsquo;
+&#34;展示图像&#34; &gt;&gt;&gt; from PIL import Image &gt;&gt;&gt; &gt;&gt;&gt; image = Image." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dom075.github.io/python/day01_15/python_%E7%AC%AC15%E5%A4%A9_%E6%93%8D%E4%BD%9C%E5%9B%BE%E5%83%8F%E5%92%8Coffice/" />
+<meta property="article:published_time" content="2020-06-15T17:51:56+08:00" />
+<meta property="article:modified_time" content="2020-06-15T17:51:56+08:00" />
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <img src="/images/profile/Jed_Wu_Cartoon.JPG" class="img-circle img-headshot center" alt="Profile Picture">
+        </div>
+        
+      
+
+      <h1>Jed Wu</h1>
+
+      
+      <p class="lead">个人技术博客</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://dom075.github.io/">Home</a>
+        </li>
+        <li>
+          <a href="/java/">Java</a>
+        </li><li>
+          <a href="/python/">Python</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="#" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1>Python 第15天 操作图像和Office软件</h1>
+
+  <div class="post-date">
+    <time datetime="2020-06-15T17:51:56&#43;0800">Jun 15, 2020</time> &middot; 1 min read
+  </div>
+
+  <hr>
+<h2 id="操作图像">操作图像</h2>
+<p>用Pillow操作图像 &lsquo;pip install pillow&rsquo;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#34;展示图像&#34;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> PIL <span style="color:#f92672">import</span> Image
+<span style="color:#f92672">&gt;&gt;&gt;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> image <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#39;./res/guido.jpg&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> image<span style="color:#f92672">.</span>format, image<span style="color:#f92672">.</span>size, image<span style="color:#f92672">.</span>mode
+(<span style="color:#e6db74">&#39;JPEG&#39;</span>, (<span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">750</span>), <span style="color:#e6db74">&#39;RGB&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> image<span style="color:#f92672">.</span>show()
+
+<span style="color:#e6db74">&#34;剪裁图像&#34;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> image <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#39;./res/guido.jpg&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> rect <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">310</span>, <span style="color:#ae81ff">360</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> image<span style="color:#f92672">.</span>crop(rect)<span style="color:#f92672">.</span>show()
+
+<span style="color:#e6db74">&#34;生成缩略图&#34;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> image <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#39;./res/guido.jpg&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> size <span style="color:#f92672">=</span> <span style="color:#ae81ff">128</span>, <span style="color:#ae81ff">128</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> image<span style="color:#f92672">.</span>thumbnail(size)
+<span style="color:#f92672">&gt;&gt;&gt;</span> image<span style="color:#f92672">.</span>show()
+<span style="color:#f92672">&gt;&gt;&gt;</span> image1 <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#39;./res/luohao.png&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> image2 <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#39;./res/guido.jpg&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> rect <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">310</span>, <span style="color:#ae81ff">360</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> guido_head <span style="color:#f92672">=</span> image2<span style="color:#f92672">.</span>crop(rect)
+<span style="color:#f92672">&gt;&gt;&gt;</span> width, height <span style="color:#f92672">=</span> guido_head<span style="color:#f92672">.</span>size
+<span style="color:#f92672">&gt;&gt;&gt;</span> image1<span style="color:#f92672">.</span>paste(guido_head<span style="color:#f92672">.</span>resize((int(width <span style="color:#f92672">/</span> <span style="color:#ae81ff">1.5</span>), int(height <span style="color:#f92672">/</span> <span style="color:#ae81ff">1.5</span>))), (<span style="color:#ae81ff">172</span>, <span style="color:#ae81ff">40</span>))
+
+<span style="color:#e6db74">&#34;翻转&#34;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> image <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#39;./res/guido.png&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> image<span style="color:#f92672">.</span>rotate(<span style="color:#ae81ff">180</span>)<span style="color:#f92672">.</span>show()
+<span style="color:#f92672">&gt;&gt;&gt;</span> image<span style="color:#f92672">.</span>transpose(Image<span style="color:#f92672">.</span>FLIP_LEFT_RIGHT)<span style="color:#f92672">.</span>show()
+
+<span style="color:#e6db74">&#34;操作图像&#34;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> image <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#39;./res/guido.jpg&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">310</span>):
+<span style="color:#f92672">...</span>     <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">360</span>):
+<span style="color:#f92672">...</span>         image<span style="color:#f92672">.</span>putpixel((x, y), (<span style="color:#ae81ff">128</span>, <span style="color:#ae81ff">128</span>, <span style="color:#ae81ff">128</span>))
+<span style="color:#f92672">...</span> 
+<span style="color:#f92672">&gt;&gt;&gt;</span> image<span style="color:#f92672">.</span>show()
+
+<span style="color:#e6db74">&#34;滤镜&#34;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> PIL <span style="color:#f92672">import</span> Image, ImageFilter
+<span style="color:#f92672">&gt;&gt;&gt;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> image <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#39;./res/guido.jpg&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> image<span style="color:#f92672">.</span>filter(ImageFilter<span style="color:#f92672">.</span>CONTOUR)<span style="color:#f92672">.</span>show()
+
+</code></pre></div><h2 id="处理excel电子表格">处理Excel电子表格</h2>
+<p>Python的openpyxl模块让我们可以在Python程序中读取和修改Excel电子表格，当然实际工作中，我们可能会用LibreOffice Calc和OpenOffice Calc来处理Excel的电子表格文件，这就意味着openpyxl模块也能处理来自这些软件生成的电子表格。关于openpyxl的使用手册和使用文档可以查看它的<a href="https://openpyxl.readthedocs.io/en/stable/#">官方文档</a>。</p>
+<h3 id="处理word文档">处理Word文档</h3>
+<p>利用python-docx模块，Pytho 可以创建和修改Word文档，当然这里的Word文档不仅仅是指通过微软的Office软件创建的扩展名为docx的文档，LibreOffice Writer和OpenOffice Writer都是免费的字处理软件。</p>
+
+</div>
+
+
+  </main>
+
+  <footer>
+  <div>
+    &copy; Jed Wu 2020
+
+    &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+    
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>
