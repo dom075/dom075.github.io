@@ -1,15 +1,182 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Jed Wu</title>
+    <title>Jed Wu</title>
     <link>https://dom075.github.io/python/</link>
-    <description>Recent content in Python on Jed Wu</description>
+    <description>Recent content on Jed Wu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2020 22:55:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2020 16:45:09 +0800</lastBuildDate>
     
 	<atom:link href="https://dom075.github.io/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python 第21-30天 前端概述</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC21-30%E5%A4%A9_%E5%89%8D%E7%AB%AF%E6%A6%82%E8%BF%B0/</link>
+      <pubDate>Wed, 17 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC21-30%E5%A4%A9_%E5%89%8D%E7%AB%AF%E6%A6%82%E8%BF%B0/</guid>
+      <description>HTML文档的后缀名 .htm 和 .html htm 和 html没有本质区别，html是为长文bai件名的格式命名的，而htm是为了兼容过du去的DOS命名格式存在的。
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;菜鸟教程(runoob.</description>
+    </item>
+    
+    <item>
+      <title>Python 第16-20天 Python语言进阶</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC16-20%E5%A4%A9_python%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/</link>
+      <pubDate>Tue, 16 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC16-20%E5%A4%A9_python%E8%AF%AD%E8%A8%80%E8%BF%9B%E9%98%B6/</guid>
+      <description>生成式来推导出字典 prices = { &amp;#39;AAPL&amp;#39;: 191.88, &amp;#39;GOOG&amp;#39;: 1186.96, &amp;#39;IBM&amp;#39;: 149.</description>
+    </item>
+    
+    <item>
+      <title>Python 第15天 操作图像和Office软件</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC15%E5%A4%A9_%E6%93%8D%E4%BD%9C%E5%9B%BE%E5%83%8F%E5%92%8Coffice/</link>
+      <pubDate>Mon, 15 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC15%E5%A4%A9_%E6%93%8D%E4%BD%9C%E5%9B%BE%E5%83%8F%E5%92%8Coffice/</guid>
+      <description>操作图像 用Pillow操作图像 &amp;lsquo;pip install pillow&amp;rsquo;
+&amp;#34;展示图像&amp;#34; &amp;gt;&amp;gt;&amp;gt; from PIL import Image &amp;gt;&amp;gt;&amp;gt; &amp;gt;&amp;gt;&amp;gt; image = Image.</description>
+    </item>
+    
+    <item>
+      <title>Python 第14天 网络编程</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC14%E5%A4%A9_%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Sun, 14 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC14%E5%A4%A9_%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</guid>
+      <description>TCP三次握手 TCP握手时使用的TCP标志（flag） —— SYN（synchronize 同步） 和 ACK（acknowledgement 确认）
+ 客户端 ——SYN——&amp;gt; 服务端 客户端 &amp;lt;——SYN + ACK—— 服务端 客户端 ——ACK——&amp;gt; 服务端  第二次握手成功后客户端进入estalished模式，第三次握手成功后服务端也进入estalished模式。 之所以要三次握手就是因为第一次客户端发送syn之后有可能因网络阻塞，在第二次握手的时候这个报文就失效了，而服务端却一直estalished状态白白等待。</description>
+    </item>
+    
+    <item>
+      <title>Python 第13天 进程和线程</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC13%E5%A4%A9_%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/</link>
+      <pubDate>Sat, 13 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC13%E5%A4%A9_%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/</guid>
+      <description>多进程 开启进程：
+from multiprocessing import Process
+process(target,args)
+这样同时开启两个进程，可以并发处理，提高效率。
+from multiprocessing import Process from os import getpid from random import randint from time import time, sleep def download_task(filename): print(&amp;#39;启动下载进程，进程号[%d].</description>
+    </item>
+    
+    <item>
+      <title>Python 第12天 正则表达式</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC12%E5%A4%A9_%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Fri, 12 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC12%E5%A4%A9_%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>Python对正则表达式的支持 Python提供了re模块来支持正则表达式相关操作，下面是re模块中的核心函数。 | 函数 | 说明 | | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; | | compile(pattern, flags=0) | 编译正则表达式返回正则表达式对象 | | match(pattern, string, flags=0) | 用正则表达式匹配字符串 成功返回匹配对象 否则返回None | | search(pattern, string, flags=0) | 搜索字符串中第一次出现正则表达式的模式 成功返回匹配对象 否则返回None | | split(pattern, string, maxsplit=0, flags=0) | 用正则表达式指定的模式分隔符拆分字符串 返回列表 | | sub(pattern, repl, string, count=0, flags=0) | 用指定的字符串替换原字符串中与正则表达式匹配的模式 可以用count指定替换的次数 | | fullmatch(pattern, string, flags=0) | match函数的完全匹配（从字符串开头到结尾）版本 | | findall(pattern, string, flags=0) | 查找字符串所有与正则表达式匹配的模式 返回字符串的列表 | | finditer(pattern, string, flags=0) | 查找字符串所有与正则表达式匹配的模式 返回一个迭代器 | | purge() | 清除隐式编译的正则表达式的缓存 | | re.</description>
+    </item>
+    
+    <item>
+      <title>Python 第11天 读写文件和Json</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC11%E5%A4%A9_%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6%E5%92%8Cjson/</link>
+      <pubDate>Thu, 11 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC11%E5%A4%A9_%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6%E5%92%8Cjson/</guid>
+      <description>open方法    操作模式 具体含义     &#39;r&#39; 读取 （默认）   &#39;w&#39; 写入（会先截断之前的内容）   &#39;x&#39; 写入，如果文件已经存在会产生异常   &#39;a&#39; 追加，将内容写入到已有文件的末尾   &#39;b&#39; 二进制模式   &#39;t&#39; 文本模式（默认）   &#39;+&#39; 更新（既可以读又可以写）    读取文件内容 def main(): f = None try: f = open(&amp;#39;C:\Blog\Python\Python_第3天_If.</description>
+    </item>
+    
+    <item>
+      <title>Python 第10天 GUI</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC10%E5%A4%A9_gui/</link>
+      <pubDate>Wed, 10 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC10%E5%A4%A9_gui/</guid>
+      <description>thinter组件 步骤：
+ 导入tkinter模块中我们需要的东西。 创建一个顶层窗口对象并用它来承载整个GUI应用。 在顶层窗口对象上添加GUI组件。 通过代码将这些GUI组件的功能组织起来。 进入主事件循环(main loop)。</description>
+    </item>
+    
+    <item>
+      <title>Python 第9天 面向对象进阶</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC9%E5%A4%A9_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6/</link>
+      <pubDate>Tue, 09 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC9%E5%A4%A9_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6/</guid>
+      <description>装饰器 简单理解就是@property的getter（访问器）、setter（修改器）
+class Person(object): def __init__(self, name, age): self._name = name self.</description>
+    </item>
+    
+    <item>
+      <title>Python 第8天 面向对象</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC8%E5%A4%A9_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Mon, 08 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC8%E5%A4%A9_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</guid>
+      <description>类 类的基本操作示例 （以下student的属性和方法都是public的）
+class Student(object): # __init__是一个特殊方法用于在创建对象时进行初始化操作 # 通过这个方法我们可以为学生对象绑定name和age两个属性 def __init__(self, name, age): self.</description>
+    </item>
+    
+    <item>
+      <title>Python 第7天 数据结构</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC7%E5%A4%A9_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Sun, 07 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC7%E5%A4%A9_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+      <description>字符串 对于字符串，最重要的一点是，字符串是不可变对象，如下代码输出的依然是abc，a没有被替换。
+a = &amp;#39;abc&amp;#39; a.replace(&amp;#39;a&amp;#39;,&amp;#39;A&amp;#39;) print(a) #输出：abc 为什么呢，因为a是变量，&amp;lsquo;abc&amp;rsquo;才是字符串对象。a.replace只是把替换了A之后返回出去&amp;rsquo;Abc&amp;rsquo;这个对象，元对象&amp;rsquo;abc&amp;rsquo;没有变动。对比以下代码：</description>
+    </item>
+    
+    <item>
+      <title>Python 第6天 方法</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC6%E5%A4%A9_%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sat, 06 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC6%E5%A4%A9_%E6%96%B9%E6%B3%95/</guid>
+      <description>方法 方法定义  用def关键字来申明方法。  def fac(num): result = 1 for n in range(1, num + 1): result *= n return result m = int(input(&amp;#39;m = &amp;#39;)) n = int(input(&amp;#39;n = &amp;#39;)) print(fac(m) // fac(n) // fac(m - n)) Python可以重复定义方法（后面的声明覆盖前面的声明），调用时选取最后的声明。  def foo(): print(&amp;#39;hello, world!</description>
+    </item>
+    
+    <item>
+      <title>Python 第5天 from import</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC5%E5%A4%A9_from_import/</link>
+      <pubDate>Fri, 05 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC5%E5%A4%A9_from_import/</guid>
+      <description>import 和 from import的区别 两个import语义有差异
+import datetime print(datetime.datetime.now()) 是引入整个datetime包</description>
+    </item>
+    
+    <item>
+      <title>Python 第4天 for循环</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC4%E5%A4%A9_for%E5%BE%AA%E7%8E%AF/</link>
+      <pubDate>Thu, 04 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC4%E5%A4%A9_for%E5%BE%AA%E7%8E%AF/</guid>
+      <description>for-in循环 sum = 0 for x in range(101): sum += x print(sum) &amp;#39;一次性抽出index和element&amp;#39; for index, elem in enumerate(list1): print(index, elem) while循环 用break退出，continue跳到下一个循环。</description>
+    </item>
+    
+    <item>
+      <title>Python 第3天 If</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC3%E5%A4%A9_if/</link>
+      <pubDate>Wed, 03 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC3%E5%A4%A9_if/</guid>
+      <description> If语句 Python 没有花括号，用缩进来表示层次。（一般用四个空格而不是Tab）。
+if x &amp;gt; 1: y = 3 * x - 5 elif x &amp;gt;= -1: y = x + 2 else: y = 5 * x + 3 </description>
+    </item>
+    
+    <item>
+      <title>Python 第2天 变量</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC2%E5%A4%A9_%E5%8F%98%E9%87%8F/</link>
+      <pubDate>Tue, 02 Jun 2020 17:51:56 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC2%E5%A4%A9_%E5%8F%98%E9%87%8F/</guid>
+      <description>Python常用变量  整型： Python 3.x之后只有int了，可以处理任意大小的整数，同时也支持二进制、八进制、十六进制等等。 浮点型： 小数（支持一般的122.45和科学计数法 1.2e2）. 字符串： &amp;lsquo;hello&amp;rsquo; &amp;ldquo;hello&amp;rdquo; 多行要用三个单引号或双引号。 布尔型： True / False 或 2 == 1 这种运算  变量命名  不能数字开头  运算符 略（常用的那些，没啥好讲）</description>
+    </item>
+    
+    <item>
+      <title>Python 第1天 HelloWorld</title>
+      <link>https://dom075.github.io/python/python_%E7%AC%AC1%E5%A4%A9_helloworld/</link>
+      <pubDate>Mon, 01 Jun 2020 11:35:34 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/python/python_%E7%AC%AC1%E5%A4%A9_helloworld/</guid>
+      <description>Python特点  解释型语言，对两种主流的编程范式（面向对象和函数式编程）都提供支持。 执行效率较低，代码无法加密。 开发时可选择的框架太多。  安装Python解释器 可以在Python官网下载。
+安装过程网上很多，查一下就行。</description>
+    </item>
     
   </channel>
 </rss>

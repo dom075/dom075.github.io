@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jed Wu</title>
+    <link>https://dom075.github.io/javascript/</link>
+    <description>Recent content on Jed Wu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jul 2020 16:45:09 +0800</lastBuildDate>
+    
+	<atom:link href="https://dom075.github.io/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript 重新介绍</title>
+      <link>https://dom075.github.io/javascript/js_%E9%87%8D%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Sat, 01 Jun 2019 11:35:34 +0800</pubDate>
+      
+      <guid>https://dom075.github.io/javascript/js_%E9%87%8D%E4%BB%8B%E7%BB%8D/</guid>
+      <description> JavaScript </description>
+    </item>
+    
+  </channel>
+</rss>

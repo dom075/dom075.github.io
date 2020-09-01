@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.73.0" />
+
+  <title>Python 第14天 网络编程 &middot; Jed Wu</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Python 第14天 网络编程">
+<meta itemprop="description" content="TCP三次握手 TCP握手时使用的TCP标志（flag） —— SYN（synchronize 同步） 和 ACK（acknowledgement 确认）
+ 客户端 ——SYN——&gt; 服务端 客户端 &lt;——SYN &#43; ACK—— 服务端 客户端 ——ACK——&gt; 服务端  第二次握手成功后客户端进入estalished模式，第三次握手成功后服务端也进入estalished模式。 之所以要三次握手就是因为第一次客户端发送syn之后有可能因网络阻塞，在第二次握手的时候这个报文就失效了，而服务端却一直estalished状态白白等待。">
+<meta itemprop="datePublished" content="2020-06-14T17:51:56&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-14T17:51:56&#43;08:00" />
+<meta itemprop="wordCount" content="35">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python 第14天 网络编程"/>
+<meta name="twitter:description" content="TCP三次握手 TCP握手时使用的TCP标志（flag） —— SYN（synchronize 同步） 和 ACK（acknowledgement 确认）
+ 客户端 ——SYN——&gt; 服务端 客户端 &lt;——SYN &#43; ACK—— 服务端 客户端 ——ACK——&gt; 服务端  第二次握手成功后客户端进入estalished模式，第三次握手成功后服务端也进入estalished模式。 之所以要三次握手就是因为第一次客户端发送syn之后有可能因网络阻塞，在第二次握手的时候这个报文就失效了，而服务端却一直estalished状态白白等待。"/>
+
+
+<meta property="og:title" content="Python 第14天 网络编程" />
+<meta property="og:description" content="TCP三次握手 TCP握手时使用的TCP标志（flag） —— SYN（synchronize 同步） 和 ACK（acknowledgement 确认）
+ 客户端 ——SYN——&gt; 服务端 客户端 &lt;——SYN &#43; ACK—— 服务端 客户端 ——ACK——&gt; 服务端  第二次握手成功后客户端进入estalished模式，第三次握手成功后服务端也进入estalished模式。 之所以要三次握手就是因为第一次客户端发送syn之后有可能因网络阻塞，在第二次握手的时候这个报文就失效了，而服务端却一直estalished状态白白等待。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dom075.github.io/python/python_%E7%AC%AC14%E5%A4%A9_%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/" />
+<meta property="article:published_time" content="2020-06-14T17:51:56+08:00" />
+<meta property="article:modified_time" content="2020-06-14T17:51:56+08:00" />
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <img src="/images/profile/Jed_Wu_Cartoon.JPG" class="img-circle img-headshot center" alt="Profile Picture">
+        </div>
+        
+      
+
+      <h1>Jed Wu</h1>
+
+      
+      <p class="lead">个人技术博客</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://dom075.github.io/">Home</a>
+        </li>
+        <li>
+          <a href="/java/">Java</a>
+        </li><li>
+          <a href="/javascript/">JavaScript</a>
+        </li><li>
+          <a href="/python/">Python</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="#" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1>Python 第14天 网络编程</h1>
+
+  <div class="post-date">
+    <time datetime="2020-06-14T17:51:56&#43;0800">Jun 14, 2020</time> &middot; 1 min read
+  </div>
+
+  <hr>
+<h2 id="tcp三次握手">TCP三次握手</h2>
+<p>TCP握手时使用的TCP标志（flag） —— SYN（synchronize 同步） 和 ACK（acknowledgement 确认）</p>
+<ol>
+<li>客户端 ——SYN——&gt; 服务端</li>
+<li>客户端 &lt;——SYN + ACK—— 服务端</li>
+<li>客户端 ——ACK——&gt; 服务端</li>
+</ol>
+<p>第二次握手成功后客户端进入estalished模式，第三次握手成功后服务端也进入estalished模式。
+之所以要三次握手就是因为第一次客户端发送syn之后有可能因网络阻塞，在第二次握手的时候这个报文就失效了，而服务端却一直estalished状态白白等待。<br>
+握手完成后开始数据传输。</p>
+<h2 id="一次完整的http请求过程">一次完整的HTTP请求过程</h2>
+<ol>
+<li>浏览器解析URL是否是一个有效的URL，无效的话就当作关键字打开默认搜索引擎搜索这个关键字。有效的话就解析（http/https)协议、域名等</li>
+<li>域名解析<br>
+先查找浏览器自身的DNS缓存，再查找system的DNS缓存，再查找本地Hosts文件，再向DNS服务器发送查找IP请求，直到找到为止。</li>
+<li>三次握手，确立连接状态</li>
+<li>客户端  ——HTTP请求——&gt; 服务端<br>
+客户端 &lt;——HTTP响应—— 服务端</li>
+<li>浏览器解析响应并渲染</li>
+</ol>
+<p>简单来说就这些，关于渲染的顺序、生成/遍历DOM字节数等等，到前端课程再讲。另外，推荐看《图解HTTP》一个日本人写的，比较基础，更详细的话就看《HTTP权威指南》，可当作开发手册。</p>
+
+</div>
+
+
+  </main>
+
+  <footer>
+  <div>
+    &copy; Jed Wu 2020
+
+    &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+    
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>

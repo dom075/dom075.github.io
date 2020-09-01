@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.73.0" />
+
+  <title>Python 第21-30天 前端概述 &middot; Jed Wu</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Python 第21-30天 前端概述">
+<meta itemprop="description" content="HTML文档的后缀名 .htm 和 .html htm 和 html没有本质区别，html是为长文bai件名的格式命名的，而htm是为了兼容过du去的DOS命名格式存在的。
+&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;菜鸟教程(runoob.">
+<meta itemprop="datePublished" content="2020-06-17T17:51:56&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-17T17:51:56&#43;08:00" />
+<meta itemprop="wordCount" content="1991">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python 第21-30天 前端概述"/>
+<meta name="twitter:description" content="HTML文档的后缀名 .htm 和 .html htm 和 html没有本质区别，html是为长文bai件名的格式命名的，而htm是为了兼容过du去的DOS命名格式存在的。
+&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;菜鸟教程(runoob."/>
+
+
+<meta property="og:title" content="Python 第21-30天 前端概述" />
+<meta property="og:description" content="HTML文档的后缀名 .htm 和 .html htm 和 html没有本质区别，html是为长文bai件名的格式命名的，而htm是为了兼容过du去的DOS命名格式存在的。
+&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;菜鸟教程(runoob." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dom075.github.io/python/python_%E7%AC%AC21-30%E5%A4%A9_%E5%89%8D%E7%AB%AF%E6%A6%82%E8%BF%B0/" />
+<meta property="article:published_time" content="2020-06-17T17:51:56+08:00" />
+<meta property="article:modified_time" content="2020-06-17T17:51:56+08:00" />
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <img src="/images/profile/Jed_Wu_Cartoon.JPG" class="img-circle img-headshot center" alt="Profile Picture">
+        </div>
+        
+      
+
+      <h1>Jed Wu</h1>
+
+      
+      <p class="lead">个人技术博客</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://dom075.github.io/">Home</a>
+        </li>
+        <li>
+          <a href="/java/">Java</a>
+        </li><li>
+          <a href="/javascript/">JavaScript</a>
+        </li><li>
+          <a href="/python/">Python</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="#" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1>Python 第21-30天 前端概述</h1>
+
+  <div class="post-date">
+    <time datetime="2020-06-17T17:51:56&#43;0800">Jun 17, 2020</time> &middot; 10 min read
+  </div>
+
+  <hr>
+<h2 id="html文档的后缀名-htm-和-html">HTML文档的后缀名 .htm 和 .html</h2>
+<p>htm 和 html没有本质区别，html是为长文bai件名的格式命名的，而htm是为了兼容过du去的DOS命名格式存在的。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+&lt;<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+&lt;<span style="color:#f92672">title</span>&gt;菜鸟教程(runoob.com)&lt;/<span style="color:#f92672">title</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">body</span>&gt;
+ 
+&lt;<span style="color:#f92672">h1</span>&gt;我的第一个标题&lt;/<span style="color:#f92672">h1</span>&gt;
+ 
+&lt;<span style="color:#f92672">p</span>&gt;我的第一个段落。&lt;/<span style="color:#f92672">p</span>&gt;
+ 
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><h2 id="doctype-声明">&lt;!DOCTYPE&gt; 声明</h2>
+<p><a href="https://www.runoob.com/tags/tag-doctype.html">DOCTYPE 参考手册</a></p>
+<ul>
+<li><strong>HTML5</strong><br>
+&lt;!DOCTYPE html&gt;</li>
+<li><strong>HTML 4.01</strong><br>
+&lt;!DOCTYPE HTML PUBLIC &ldquo;-//W3C//DTD HTML 4.01 Transitional//EN&rdquo;
+&ldquo;<a href="http://www.w3.org/TR/html4/loose.dtd%22%3E">http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</a></li>
+<li><strong>XHTML 1.0</strong><br>
+&lt;!DOCTYPE html PUBLIC &ldquo;-//W3C//DTD XHTML 1.0 Transitional//EN&rdquo;
+&ldquo;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd%22%3E">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</a></li>
+</ul>
+<h2 id="head-元素">&lt;head&gt; 元素</h2>
+<ul>
+<li>&lt;title&gt; 元素 :浏览器工具栏的标题</li>
+<li>&lt;base&gt; 元素 :所有链接规定默认地址或默认目标。<br>
+比如规定了base中的href=&quot;http://XXX.com/i/&rdquo; target=&rdquo;_blank&rdquo;, img的src就可以填相对路径&rsquo;yyy.gif&rsquo;,&lt;a&gt;的目标也可以不填，默认就是新窗口打开。</li>
+<li>&lt;link&gt; 元素 :标签通常用于链接到样式表</li>
+<li>&lt;style&gt; 元素：可以直接添加整个网页的样式。如：&lt;style type=&quot;text/css&quot;&gt; body {background-color:yellow}&rdquo; p {color:blue}&lt;/style&gt;</li>
+<li>&lt;meta&gt; 元素: 页面的元信息,比如 charset=&quot;utf-8&rdquo;</li>
+<li>&lt;script&gt; 元素: 如Javascript</li>
+</ul>
+<h2 id="常用标签">常用标签</h2>
+<p>有用文档：<br>
+<a href="https://www.runoob.com/html/html-examples.html">html实例Sample</a><br>
+<a href="https://www.runoob.com/tags/html-reference.html">html标签参考手册</a><br>
+<a href="https://www.runoob.com/tags/ref-standardattributes.html">html标签属性</a></p>
+<ul>
+<li>&lt;h1&gt;&lt;/h1&gt; : 1级Head标题</li>
+<li>&lt;h2&gt;&lt;/h2&gt; : 2级Head标题</li>
+<li>&lt;p&gt;&lt;/p&gt; : 段落</li>
+<li>&lt;a href=&rdquo;&rdquo; target=&rdquo;_blank&rdquo; alt=&quot;jed&quot;&gt;&lt;/a&gt; : 链接 (target表示在新窗口打开或其他,alt表示在图像无法显示时代替显示的文字)</li>
+<li>&lt;img src=&rdquo;/images/logo.png&rdquo; width=&quot;258&rdquo; height=&quot;39&rdquo; /&gt; : 图像</li>
+<li>&lt;br /&gt; : 换行</li>
+<li>&lt;hr /&gt; : 水平线</li>
+<li>&lt;ul&gt; + &lt;li&gt;： 无序列表（就是Markdown里的 *）</li>
+<li>&lt;ol&gt; + &lt;li&gt;： 有序列表（就是Markdown里的 1.）</li>
+<li>&lt;dl&gt; + &lt;dt&gt; + &lt;dd&gt;： 自定义列表（就是Markdown里的 缩进）</li>
+<li>&lt;span&gt; ： 用于为部分文本设置样式属性</li>
+<li>&lt;form&gt; : 有了form表单，才能添加&lt;input&gt;,才可以提交表单</li>
+<li>&lt;iframe src=&quot;URL&rdquo; name=&quot;&ldquo;&gt;<!-- raw HTML omitted --> : 外链别的网页（比如广告）在&lt;a&gt;链接中可以指定target=这个name，就会让iframe中的网页跳转到&lt;a&gt;中href指定的网页。</li>
+</ul>
+<p>文本相关的标签
+|标签	|描述 |
+|&mdash;&mdash;-|&mdash;&mdash;&mdash;|
+|&lt;b&gt;|	定义粗体文本|
+|&lt;em&gt;|	定义着重文字|
+|&lt;i&gt;|	定义斜体字|
+|&lt;small&gt;|	定义小号字|
+|&lt;strong&gt;|	定义加重语气|
+|&lt;sub&gt;|	定义下标字|
+|&lt;sup&gt;|	定义上标字|
+|&lt;ins&gt;|	定义插入字|
+|&lt;del&gt;|	定义删除字|</p>
+<p>代码相关的标签
+|标签	|描述|
+|&mdash;&mdash;-|&mdash;|
+|&lt;code&gt;|	定义计算机代码|
+|&lt;kbd&gt;|	定义键盘码|
+|&lt;samp&gt;|	定义计算机代码样本|
+|&lt;var&gt;|	定义变量|
+|&lt;pre&gt;|	定义预格式文本|
+引文, 引用相关的标签
+|标签|	描述|
+|&mdash;|&mdash;|
+|&lt;abbr&gt;|	定义缩写|
+|&lt;address&gt;|	定义地址|
+|&lt;bdo&gt;|	定义文字方向|
+|&lt;blockquote&gt;|	定义长的引用|
+|&lt;q&gt;|	定义短的引用语|
+|&lt;cite&gt;|	定义引用、引证|
+|&lt;dfn&gt;|	定义一个定义项目|
+表格标签：（忽略非常熟悉的标签）
+|标签	|描述|
+|&mdash;-|&mdash;|
+|&lt;caption&gt; |	定义表格标题|
+|&lt;colgroup&gt;|	定义表格列的组|
+|&lt;col&gt;|	定义用于表格列的属性|
+|&lt;thead&gt;|	定义表格的页眉|
+|&lt;tbody&gt;|	定义表格的主体|
+|&lt;tfoot&gt;|	定义表格的页脚|
+表单标签：（New：HTML5新标签）
+|标签|	描述|
+|&mdash;-|&mdash;|
+|&lt;form&gt;	|定义供用户输入的表单|
+|&lt;input&gt;	|定义输入域|
+|&lt;textarea&gt;	|定义文本域 (一个多行的输入控件)|
+|&lt;label&gt;	|定义了 &lt;input&gt; 元素的标签，一般为输入标题|
+|&lt;fieldset&gt;	|定义了一组相关的表单元素，并使用外框包含起来|
+|&lt;legend&gt;	|定义了 &lt;fieldset&gt; 元素的标题|
+|&lt;select&gt;	|定义了下拉选项列表|
+|&lt;optgroup&gt;	|定义选项组|
+|&lt;option&gt;	|定义下拉列表中的选项|
+|&lt;button&gt;	|定义一个点击按钮|
+|&lt;datalist&gt;New	|指定一个预先|定义的输入控件选项列表|
+|&lt;keygen&gt;New	|定义了表单的密钥对生成器字段|
+|&lt;output&gt;New	|定义一个计算结果|</p>
+<h2 id="常用属性">常用属性</h2>
+<h2 id="react入门">React入门</h2>
+<h3 id="引入reactjs">引入React.js</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+  &lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;../build/react.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;../build/react-dom.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;../build/browser.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+  &lt;/<span style="color:#f92672">head</span>&gt;
+  &lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;example&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/babel&#34;</span>&gt;
+      <span style="color:#75715e">// ** Our code goes here! **
+</span><span style="color:#75715e"></span>    &lt;/<span style="color:#f92672">script</span>&gt;
+  &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><p>注意点：</p>
+<ol>
+<li>React独有的JSX 语法,要声明&lt;script type=&quot;text/babel&quot;&gt;</li>
+<li>在head中引入三个库：<br>
+react.js  &ndash; React核心库<br>
+react-dom.js  &ndash; React与DOM 相关的功能库<br>
+Browser.js  &ndash; 将 JSX 语法转为 JavaScript 语法  (实际上线的时候，应该将它放到服务器完成)</li>
+<li>ReactDOM.render()将模板转为HTML语言，并插入指定的 DOM 节点.</li>
+</ol>
+<h3 id="jsx语法">JSX语法</h3>
+<p>就是Html和JS混用的语法，甚至可以把HTML标签加到arr中，然后用ReactDOM.render直接全部显示。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JSX" data-lang="JSX"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> [
+  &lt;<span style="color:#f92672">h1</span>&gt;<span style="color:#a6e22e">Hello</span> <span style="color:#a6e22e">world</span><span style="color:#f92672">!</span>&lt;/<span style="color:#f92672">h1</span>&gt;,
+  &lt;<span style="color:#f92672">h2</span>&gt;<span style="color:#a6e22e">React</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">awesome</span>&lt;/<span style="color:#f92672">h2</span>&gt;,
+];
+<span style="color:#a6e22e">ReactDOM</span>.<span style="color:#a6e22e">render</span>(
+  &lt;<span style="color:#f92672">div</span>&gt;{<span style="color:#a6e22e">arr</span>}&lt;/<span style="color:#f92672">div</span>&gt;,
+  document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;example&#39;</span>)
+);
+</code></pre></div><p>注意，JSX中属性和方法的命名必须要用驼峰规则。如onclick -&gt; onClick</p>
+<h3 id="组件component">组件（component)</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JSX" data-lang="JSX"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">HelloMessage</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">createClass</span>({
+  <span style="color:#a6e22e">render</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>() {
+    <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">h1</span>&gt;<span style="color:#a6e22e">Hello</span> {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">name</span>}&lt;/<span style="color:#f92672">h1</span>&gt;;
+  }
+});
+
+<span style="color:#a6e22e">ReactDOM</span>.<span style="color:#a6e22e">render</span>(
+  &lt;<span style="color:#f92672">HelloMessage</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;John&#34;</span> /&gt;,
+  document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;example&#39;</span>)
+);
+</code></pre></div><p>用React.createClass来新建一个component，建好之后就可以在ReactDOM.render中当普通HTML标签使用。
+注意：</p>
+<ul>
+<li>组件类中必须包含render()</li>
+<li>组件类的第一个字母必须大写，否则会报错</li>
+<li>组件类只能包含一个顶层标签，否则也会报错</li>
+</ul>
+<p>组件的用法与原生的 HTML 标签完全一致，可以任意加入属性，比如&lt;HelloMessage name=&quot;John&quot;&gt;，然后用 this.props.name来获得value。<strong>注意</strong> 因为 class 和 for,所以：</p>
+<ul>
+<li>class 属性需要写成 className</li>
+<li>for 属性需要写成 htmlFor</li>
+</ul>
+<p>除了用原生的React.createClass方法来创建Component,还有两种方法可以创建Component,分别是Simple Component和 ClassComponent：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JSX" data-lang="JSX"><span style="color:#75715e">// Simple Component
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">SimpleComponent</span> <span style="color:#f92672">=</span> () =&gt; {
+  <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">div</span>&gt;<span style="color:#a6e22e">Example</span>&lt;/<span style="color:#f92672">div</span>&gt;
+}
+
+<span style="color:#75715e">// Class Component
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ClassComponent</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">div</span>&gt;<span style="color:#a6e22e">Example</span>&lt;/<span style="color:#f92672">div</span>&gt;
+  }
+}
+<span style="color:#75715e">// 注意return多行的话要用()括起来
+</span></code></pre></div><h3 id="所有子节点-thispropschildren">所有子节点 this.props.children</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JSX" data-lang="JSX"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">NotesList</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">createClass</span>({
+  <span style="color:#a6e22e">render</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>() {
+    <span style="color:#66d9ef">return</span> (
+      &lt;<span style="color:#f92672">ol</span>&gt;
+      {
+        <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">Children</span>.<span style="color:#a6e22e">map</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">children</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">child</span>) {
+          <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">li</span>&gt;{<span style="color:#a6e22e">child</span>}&lt;/<span style="color:#f92672">li</span>&gt;;
+        })
+      }
+      &lt;/<span style="color:#f92672">ol</span>&gt;
+    );
+  }
+});
+
+<span style="color:#a6e22e">ReactDOM</span>.<span style="color:#a6e22e">render</span>(
+  &lt;<span style="color:#f92672">NotesList</span>&gt;
+    &lt;<span style="color:#f92672">span</span>&gt;<span style="color:#a6e22e">hello</span>&lt;/<span style="color:#f92672">span</span>&gt;
+    &lt;<span style="color:#f92672">span</span>&gt;<span style="color:#a6e22e">world</span>&lt;/<span style="color:#f92672">span</span>&gt;
+  &lt;/<span style="color:#f92672">NotesList</span>&gt;,
+  document.<span style="color:#a6e22e">body</span>
+);
+</code></pre></div><p>this.props.children 表示组件的所有子节点，返回值会有三种可能：</p>
+<ol>
+<li>当前组件没有子节点，它就是 undefined</li>
+<li>有一个子节点，数据类型是 object</li>
+<li>有多个子节点，数据类型就是 array</li>
+</ol>
+<p>可以用 React.Children.map 来遍历子节点，而不用担心 this.props.children 的数据类型是 undefined 还是 object。当然React.Children还有别的方法，<a href="https://reactjs.org/docs/react-api.html#react.children">参考官方文档</a>。</p>
+<h3 id="检查属性的类型是否正确-proptypes">检查属性的类型是否正确 PropTypes</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JSX" data-lang="JSX">    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">123</span>;
+
+    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyTitle</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">Component</span> {
+    <span style="color:#66d9ef">static</span> <span style="color:#a6e22e">propTypes</span> <span style="color:#f92672">=</span> {
+        <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">PropTypes</span>.<span style="color:#a6e22e">string</span>.<span style="color:#a6e22e">isRequired</span>,
+    }
+    <span style="color:#a6e22e">render</span>() {
+        <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">h1</span>&gt; {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">title</span>} &lt;/<span style="color:#f92672">h1</span>&gt;;
+    }
+    }
+
+
+    <span style="color:#a6e22e">ReactDOM</span>.<span style="color:#a6e22e">render</span>(
+    &lt;<span style="color:#f92672">MyTitle</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">data</span>} /&gt;,
+    document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;example&#39;</span>)
+    );
+</code></pre></div><p>PropTypes 告诉 React，这个 title 属性是必须的，而且它的值必须是字符串。如示例中的是个数字，则会在Console中显示一行错误：Warning: Failed propType: Invalid prop&hellip;<br>
+出于性能方面的考虑，propTypes 仅在开发模式下进行检查。
+<a href="https://zh-hans.reactjs.org/docs/typechecking-with-proptypes.html#gatsby-focus-wrapper">官方文档</a></p>
+<p>另外，还可以用getDefaultProps来设置propTypes的默认值。</p>
+<h3 id="获取真实的dom节点-ref">获取真实的DOM节点 ref</h3>
+<p>Component中的DOM不是真实的DOM，要获取真实的DOM就要用到ref</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JSX" data-lang="JSX"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CustomTextInput</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>) {
+    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>);
+    <span style="color:#75715e">// 创建一个 ref 来存储 textInput 的 DOM 元素
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">textInput</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">createRef</span>();
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">focusTextInput</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">focusTextInput</span>.<span style="color:#a6e22e">bind</span>(<span style="color:#66d9ef">this</span>);
+  }
+
+  <span style="color:#a6e22e">focusTextInput</span>() {
+    <span style="color:#75715e">// 直接使用原生 API 使 text 输入框获得焦点
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 注意：我们通过 &#34;current&#34; 来访问 DOM 节点
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">textInput</span>.<span style="color:#a6e22e">current</span>.<span style="color:#a6e22e">focus</span>();
+  }
+
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#75715e">// 告诉 React 我们想把 &lt;input&gt; ref 关联到
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 构造器里创建的 `textInput` 上
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> (
+      &lt;<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">input</span>
+          <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">ref</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">textInput</span>} /&gt;
+        &lt;<span style="color:#f92672">input</span>
+          <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Focus the text input&#34;</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">focusTextInput</span>}
+        /&gt;
+      &lt;/<span style="color:#f92672">div</span>&gt;
+    );
+  }
+}
+</code></pre></div><p>注意的是，由于 this.refs.[refName] 属性获取的是真实 DOM ，所以必须等到虚拟 DOM 插入文档以后，才能使用这个属性，否则会报错.</p>
+<h3 id="state-">state</h3>
+<p>Props相当于是每个元素的attribute值，State相当于cookie，可以保存私有数据。<br>
+初始化State(在类的构造器中初始化)，然后就可以在任何地方使用</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx">  <span style="color:#75715e">// 每次定义子类的构造函数时，都需要调用 super 方法。
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">// 因此，在所有含有构造函数的的 React 组件中，构造函数必须以 super(props) 开头
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>){
+    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>)
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">initialState</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+      <span style="color:#a6e22e">job</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+    }
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">initialState</span>
+  }
+
+  <span style="color:#75715e">// 读取state
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">characters</span> } <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>
+
+  <span style="color:#75715e">// 赋值state
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setState</span>({
+    <span style="color:#a6e22e">characters</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">characters</span>.<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">character</span>, <span style="color:#a6e22e">i</span>) =&gt; {
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">index</span>
+    }),
+  })
+</code></pre></div><p>此外，State 的更新可能是异步的</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#75715e">// 错误示范：因为this.state不会实时更新，是异步的。
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setState</span>({
+  <span style="color:#a6e22e">counter</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">counter</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">increment</span>,
+});
+
+<span style="color:#75715e">// 正确示范
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setState</span>((<span style="color:#a6e22e">state</span>, <span style="color:#a6e22e">props</span>) =&gt; ({
+  <span style="color:#a6e22e">counter</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">counter</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">increment</span>
+}));
+</code></pre></div><h4 id="state的省略参数">state的省略参数</h4>
+<p>例如，这里的 state 包含几个独立的变量</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JSX" data-lang="JSX"><span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>) {
+    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>);
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">posts</span><span style="color:#f92672">:</span> [],
+      <span style="color:#a6e22e">comments</span><span style="color:#f92672">:</span> []
+    };
+  }
+</code></pre></div><p>可以分别调用 setState() 来单独地更新它们：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">componentDidMount</span>() {
+    <span style="color:#a6e22e">fetchPosts</span>().<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">response</span> =&gt; {
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setState</span>({
+        <span style="color:#a6e22e">posts</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">posts</span>
+      });
+    });
+
+    <span style="color:#a6e22e">fetchComments</span>().<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">response</span> =&gt; {
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setState</span>({
+        <span style="color:#a6e22e">comments</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">comments</span>
+      });
+    });
+  }
+</code></pre></div><h3 id="form表单-">Form表单</h3>
+<p>在React中使用表单，可以单独定义一个Form组件,然后在App.js中使用这个组件。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>){
+  <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>)
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">initialState</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+    <span style="color:#a6e22e">job</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+  }
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">initialState</span>
+}
+
+<span style="color:#a6e22e">handleChange</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">event</span>) =&gt; {
+  <span style="color:#75715e">// 获得Change事件中的name和value set到State中
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> {<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">value</span>} <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>
+
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setState</span>({
+    [<span style="color:#a6e22e">name</span>]<span style="color:#f92672">:</span> <span style="color:#a6e22e">value</span>,
+  })
+}
+
+<span style="color:#a6e22e">onFormSubmit</span>  <span style="color:#f92672">=</span> (<span style="color:#a6e22e">event</span>) =&gt; {
+  <span style="color:#75715e">// 阻止事件本身的默认动作，这里就是提交，因为这里是演示用虚拟提交，不用正式提交。
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">// 这个方法还可以用于阻止click、input等
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">preventDefault</span>()
+      
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">handleSubmit</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>)
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setState</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">initialState</span>)
+}
+
+<span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">job</span> } <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>;
+  
+    <span style="color:#66d9ef">return</span> (
+      &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">onSubmit</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">onFormSubmit</span>}&gt;
+        &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">htmlFor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span>&gt;<span style="color:#a6e22e">Name</span>&lt;/<span style="color:#f92672">label</span>&gt;
+        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;name&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">name</span>} <span style="color:#a6e22e">onChange</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">handleChange</span>} /&gt;
+        &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">htmlFor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;job&#34;</span>&gt;<span style="color:#a6e22e">Job</span>&lt;/<span style="color:#f92672">label</span>&gt;
+        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;job&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;job&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">job</span>} <span style="color:#a6e22e">onChange</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">handleChange</span>} /&gt;
+        &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;<span style="color:#a6e22e">Submit</span>&lt;/<span style="color:#f92672">button</span>&gt;  
+      &lt;/<span style="color:#f92672">form</span>&gt;
+    );
+  }
+</code></pre></div><p>注意这里，要取得onChange事件里的值，要用event.targe</p>
+<h3 id="生命周期">生命周期</h3>
+<ul>
+<li>挂载（Mounting）<br>
+当组件实例被创建并插入 DOM 中时，其生命周期调用顺序如下：<br>
+constructor()<br>
+static getDerivedStateFromProps()<br>
+render()<br>
+componentDidMount() <br>
+此外，UNSAFE_componentWillMount()即将被过时，不要使用</li>
+<li>更新（Updating）<br>
+当组件的 props 或 state 发生变化时会触发更新。组件更新的生命周期调用顺序如下：
+static getDerivedStateFromProps()<br>
+shouldComponentUpdate() //判断组件是否被重新渲染<br>
+render()<br>
+getSnapshotBeforeUpdate()<br>
+componentDidUpdate()<br>
+此外，UNSAFE_componentWillUpdate()UNSAFE_componentWillReceiveProps()即将被过时，不要使用</li>
+<li>卸载（Unmounting）<br>
+当组件从 DOM 中移除时会调用如下方法：<br>
+componentWillUnmount()</li>
+</ul>
+<h2 id="redux">Redux</h2>
+<p>Redux的设计思想：</p>
+<ul>
+<li>Web 应用是一个状态机，视图与状态是一一对应的。</li>
+<li>所有的状态，保存在一个对象里面。</li>
+</ul>
+<p>Redux 的适用场景:</p>
+<ol>
+<li>用户的使用方式复杂</li>
+<li>不同身份的用户有不同的使用方式（比如普通用户和管理员）</li>
+<li>多个用户之间可以协作</li>
+<li>与服务器大量交互，或者使用了WebSocket</li>
+<li>View要从多个来源获取数据</li>
+</ol>
+<p>从组件角度看：</p>
+<ol>
+<li>某个组件的状态，需要共享</li>
+<li>某个状态需要在任何地方都可以拿到</li>
+<li>一个组件需要改变全局状态</li>
+<li>一个组件需要改变另一个组件的状态</li>
+</ol>
+<h3 id="store">Store</h3>
+<p>Store 就是保存数据的地方，可以把它看成一个容器。整个应用只能有一个 Store。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createStore</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(<span style="color:#a6e22e">fn</span>);
+</code></pre></div><p>在正式项目中，也可以把store单独为一个store.js,在store中存放Reducer、initialState、以及应用中间件。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span><span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(
+    <span style="color:#a6e22e">rootReducer</span>,
+    <span style="color:#a6e22e">initialState</span>,
+    <span style="color:#a6e22e">applyMiddleware</span>(<span style="color:#a6e22e">sagaMiddleware</span>)    
+)
+</code></pre></div><h3 id="state">State</h3>
+<p>要从store中取当前时刻的数据，就用store.getState()</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createStore</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(<span style="color:#a6e22e">fn</span>);
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">getState</span>();
+</code></pre></div><p>Redux 规定， 一个 State 对应一个 View。只要 State 相同，View 就相同。</p>
+<h3 id="action">Action</h3>
+<p>Action 就是 View 发出的通知，表示 State 应该要发生变化了。type是必须项。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">action</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;ADD_TODO&#39;</span>,
+  <span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Learn Redux&#39;</span>
+};
+</code></pre></div><p>当然也可以把Action当作一个函数，放在一个单独的Action.js中返回出去。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">LoadSurveyAction</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">params</span> =&gt; ({
+  <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">LOAD_SURVEY</span>,
+  <span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">params</span>
+})
+</code></pre></div><h3 id="storedispatch">store.dispatch()</h3>
+<p>store.dispatch()是 View 发出 Action 的唯一方法。store.dispatch接受一个 Action 对象作为参数，将它发送出。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createStore</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(<span style="color:#a6e22e">fn</span>);
+
+<span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">dispatch</span>({
+  <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;ADD_TODO&#39;</span>,
+  <span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Learn Redux&#39;</span>
+});
+
+<span style="color:#75715e">// 也可以用回调的方式：
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">dispatch</span>(<span style="color:#a6e22e">LoadSurveyAction</span>(<span style="color:#a6e22e">params</span>))
+</code></pre></div><h3 id="storesubscribe">store.subscribe()</h3>
+<p>监听state的变换，一旦 State 发生变化，就自动执行这个函数。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createStore</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">reducer</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./reducers&#39;</span>;
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">changeBtnText</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./actions&#39;</span>;
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(<span style="color:#a6e22e">reducer</span>);
+<span style="color:#75715e">// 开始监听，每次state更新，那么就会打印出当前状态
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">unsubscribe</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">subscribe</span>(() =&gt; {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">info</span>(<span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">getState</span>());
+});
+<span style="color:#75715e">// 发送消息
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">dispatch</span>(<span style="color:#a6e22e">changeBtnText</span>(<span style="color:#e6db74">&#39;点击了按钮&#39;</span>));
+<span style="color:#75715e">// 停止监听state的更新
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">unsubscribe</span>();
+</code></pre></div><h3 id="reducer">Reducer</h3>
+<p>Store 收到 Action 以后，必须给出一个新的 State，这样 View 才会发生变化。这种 State 的计算过程就叫做 Reducer。<br>
+store.dispatch方法会触发 Reducer 的自动执行，所以在生成 Store 的时候，将 Reducer 传入createStore方法：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span><span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(
+    <span style="color:#a6e22e">rootReducer</span>,
+    <span style="color:#a6e22e">initialState</span>,
+    <span style="color:#a6e22e">applyMiddleware</span>(<span style="color:#a6e22e">sagaMiddleware</span>)    
+)
+</code></pre></div><p>正式项目中还可以把Reducer单独放在一个XXXXX_reducer.js文件中,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#75715e">//注意state可以设置默认值
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">headerButtonReducer</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">state</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">isShow</span><span style="color:#f92672">:</span><span style="color:#66d9ef">true</span>} , <span style="color:#a6e22e">action</span>) {
+    <span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">type</span>) {
+        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;SHOW_HeaderButton&#39;</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> {
+                ...<span style="color:#a6e22e">state</span>,<span style="color:#a6e22e">isShow</span><span style="color:#f92672">:</span><span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">payload</span>
+            }
+        <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">state</span>
+    }
+}
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">headerButtonReducer</span>
+</code></pre></div><p>然后再用combineReducers把所有Reduce组合在一起再放到creatStore中。同时，这里还可以改store的属性名。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">reducer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">combineReducers</span>({
+  <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">doSomethingWithA</span>,
+  <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">processB</span>,
+  <span style="color:#a6e22e">c</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">c</span>
+})
+</code></pre></div><h3 id="总结">总结：</h3>
+<p>（1）Reducer：纯函数，只承担计算 State 的功能。</p>
+<p>（2）View：与 State 一一对应，可以看作 State 的视觉层，也不合适承担其他功能。</p>
+<p>（3）Action：存放数据的对象，即消息的载体，只能被别人操作，自己不能进行任何操作。</p>
+<p>【一个简单的示例  】<br>
+actionTypes.js：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">CHANGE_BTN_TEXT</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;CHANGE_BTN_TEXT&#39;</span>;
+</code></pre></div><p>actions.js：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">T</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./actionTypes&#39;</span>;
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">changeBtnText</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">text</span>) =&gt; {
+  <span style="color:#66d9ef">return</span> {
+    <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">T</span>.<span style="color:#a6e22e">CHANGE_BTN_TEXT</span>,
+    <span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">text</span>
+  };
+};
+</code></pre></div><p>reducers.js：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">T</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./actionTypes&#39;</span>;
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">initialState</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">btnText</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;我是按钮&#39;</span>,
+};
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">pageMainReducer</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">initialState</span>, <span style="color:#a6e22e">action</span>) =&gt; {
+  <span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">type</span>) {
+    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">T</span>.<span style="color:#a6e22e">CHANGE_BTN_TEXT</span><span style="color:#f92672">:</span>
+      <span style="color:#66d9ef">return</span> {
+        ...<span style="color:#a6e22e">state</span>,
+        <span style="color:#a6e22e">btnText</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">payload</span>
+      };
+    <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">state</span>;
+  }
+};
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">pageMainReducer</span>;
+</code></pre></div><p>index.js</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createStore</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">reducer</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./reducers&#39;</span>;
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">changeBtnText</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./actions&#39;</span>;
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(<span style="color:#a6e22e">reducer</span>);
+<span style="color:#75715e">// 开始监听，每次state更新，那么就会打印出当前状态
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">unsubscribe</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">subscribe</span>(() =&gt; {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">info</span>(<span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">getState</span>());
+});
+<span style="color:#75715e">// 发送消息
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">dispatch</span>(<span style="color:#a6e22e">changeBtnText</span>(<span style="color:#e6db74">&#39;点击了按钮&#39;</span>));
+<span style="color:#75715e">// 停止监听state的更新
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">unsubscribe</span>();
+</code></pre></div><p>最后要注意的就是记得在最后的render中要加上<!-- raw HTML omitted -->,才可以让容器组件拿到state</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> {<span style="color:#a6e22e">Provider</span>} <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-redux&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">store</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./store/store&#39;</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isPCClient</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">IsPCClient</span>()
+
+<span style="color:#a6e22e">ReactDOM</span>.<span style="color:#a6e22e">render</span>(&lt;<span style="color:#f92672">Provider</span> <span style="color:#a6e22e">store</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">store</span>}&gt;{<span style="color:#a6e22e">isPCClient</span><span style="color:#f92672">?</span>&lt;<span style="color:#f92672">App</span>/&gt;<span style="color:#f92672">:</span>&lt;<span style="color:#f92672">AppMobile</span>/&gt;}&lt;/<span style="color:#f92672">Provider</span>&gt;, document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;root&#39;</span>));
+</code></pre></div><h3 id="总结2-react和rudex结合">总结2 React和Rudex结合</h3>
+<ol>
+<li>创建一个组件:PageMainCmp.js 关键点是映射到state和connect</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PageMain</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">props</span>) =&gt; {
+  <span style="color:#66d9ef">return</span> (
+    &lt;<span style="color:#f92672">div</span>&gt;
+      &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span>{() =&gt; {
+        <span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">changeText</span>(<span style="color:#e6db74">&#39;按钮被点击了&#39;</span>);
+      }}
+      &gt;
+        {<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">btnText</span>}
+      &lt;/<span style="color:#f92672">button</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+  );
+};
+<span style="color:#75715e">// 映射State数据
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mapStateToProps</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">state</span>) =&gt; {
+  <span style="color:#66d9ef">return</span> {
+    <span style="color:#a6e22e">btnText</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">pageMain</span>.<span style="color:#a6e22e">btnText</span>,
+  };
+};
+<span style="color:#75715e">// 映射dispatch函数
+</span><span style="color:#75715e">//（react-redux会自动添加到dispatch()中）
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mapDispatchToProps</span> <span style="color:#f92672">=</span> {
+  <span style="color:#66d9ef">return</span> {
+    <span style="color:#a6e22e">changeText</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">changeBtnText</span> <span style="color:#75715e">//这个方法在action中，要import
+</span><span style="color:#75715e"></span>  }
+};
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">connect</span>(<span style="color:#a6e22e">mapStateToProps</span>, <span style="color:#a6e22e">mapDispatchToProps</span>)(<span style="color:#a6e22e">PageMain</span>);
+</code></pre></div><p>actions.js：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">T</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./actionTypes&#39;</span>;
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">changeBtnText</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">text</span>) =&gt; {
+  <span style="color:#66d9ef">return</span> {
+    <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">T</span>.<span style="color:#a6e22e">CHANGE_BTN_TEXT</span>,
+    <span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">text</span>
+  };
+};
+</code></pre></div><p>reducer.js</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">combineReducers</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">pageMain</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./components/pageMain/reducers&#39;</span>;
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">reducer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">combineReducers</span>({
+  <span style="color:#a6e22e">pageMain</span>
+});
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">reducer</span>;
+</code></pre></div><p>index.js:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react&#39;</span>;
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createStore</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Provider</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-redux&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">ReactDOM</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-dom&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">reducer</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./reducers&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">PageMain</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./components/pageMain&#39;</span>;
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(<span style="color:#a6e22e">reducer</span>);
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">App</span> <span style="color:#f92672">=</span> () =&gt; (
+  &lt;<span style="color:#f92672">Provider</span> <span style="color:#a6e22e">store</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">store</span>}&gt;
+    &lt;<span style="color:#f92672">PageMain</span> /&gt;
+  &lt;/<span style="color:#f92672">Provider</span>&gt;
+);
+
+<span style="color:#a6e22e">ReactDOM</span>.<span style="color:#a6e22e">render</span>(&lt;<span style="color:#f92672">App</span> /&gt;, document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;app&#39;</span>));
+</code></pre></div><h3 id="中间件">中间件</h3>
+<p>中间件就是一个函数，对store.dispatch方法进行了改造，在发出 Action 和执行 Reducer 这两步之间，添加了其他功能。<br>
+使用中间件：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">applyMiddleware</span>, <span style="color:#a6e22e">createStore</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">createLogger</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux-logger&#39;</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">logger</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createLogger</span>();
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">initialState</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">constText</span><span style="color:#f92672">:</span>{
+      <span style="color:#a6e22e">xxx</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">YYY</span>,  
+    },
+    <span style="color:#a6e22e">headerOption</span><span style="color:#f92672">:</span>{
+      <span style="color:#a6e22e">activeMenu</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">headerOptionItems</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">displayName</span>
+    },
+}
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(
+  <span style="color:#a6e22e">reducer</span>,
+  <span style="color:#a6e22e">initialState</span>,
+  <span style="color:#a6e22e">applyMiddleware</span>(<span style="color:#a6e22e">logger</span>)
+);
+</code></pre></div><p>注意：
+（1）createStore方法可以接受整个应用的初始状态（initialState）作为参数，那样的话，applyMiddleware就是第三个参数了。<br>
+（2）中间件的次序有讲究，比如applyMiddleware(thunk, promise, logger)，要看一下文档。</p>
+<h3 id="redux-thunk-处理异步action">redux-thunk: 处理异步action</h3>
+<p>把thunk应用到store中:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createStore</span>, <span style="color:#a6e22e">applyMiddleware</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">thunk</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux-thunk&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">reducer</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./reducers&#39;</span>;
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(
+  <span style="color:#a6e22e">reducer</span>,
+  <span style="color:#a6e22e">applyMiddleware</span>(<span style="color:#a6e22e">thunk</span>)
+);
+</code></pre></div><p>在actions中可以异步化action:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">axios</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;axios&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">T</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./actionTypes&#39;</span>;
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">changeBtnText</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">text</span>) =&gt; {
+  <span style="color:#66d9ef">return</span> {
+    <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">T</span>.<span style="color:#a6e22e">CHANGE_BTN_TEXT</span>,
+    <span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">text</span>
+  };
+};
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">changeBtnTextAsync</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">text</span>) =&gt; {
+  <span style="color:#66d9ef">return</span> (<span style="color:#a6e22e">dispatch</span>, <span style="color:#a6e22e">getState</span>) =&gt; {
+    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">getState</span>().<span style="color:#a6e22e">isLoading</span>) {
+      <span style="color:#a6e22e">dispatch</span>(<span style="color:#a6e22e">changeBtnText</span>(<span style="color:#e6db74">&#39;正在加载中&#39;</span>));
+    }
+    <span style="color:#a6e22e">axios</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">`http://test.com/</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">text</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>).<span style="color:#a6e22e">then</span>(() =&gt; {
+      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">getState</span>().<span style="color:#a6e22e">isLoading</span>) {
+        <span style="color:#a6e22e">dispatch</span>(<span style="color:#a6e22e">changeBtnText</span>(<span style="color:#e6db74">&#39;加载完毕&#39;</span>));
+      }
+    }).<span style="color:#66d9ef">catch</span>(() =&gt; {
+      <span style="color:#a6e22e">dispatch</span>(<span style="color:#a6e22e">changeBtnText</span>(<span style="color:#e6db74">&#39;加载有误&#39;</span>));
+    });
+  };
+};
+</code></pre></div><p>映射和同步方法的映射一致：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mapDispatchToProps</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">dispatch</span>) =&gt; {
+  <span style="color:#66d9ef">return</span> {
+    <span style="color:#a6e22e">changeText</span><span style="color:#f92672">:</span><span style="color:#a6e22e">changeBtnTextAsyn</span>
+    }
+  };
+};
+</code></pre></div><h3 id="redux-saga-更优雅的处理异步action">redux-saga: 更优雅的处理异步action</h3>
+<p>sagas的3种类型</p>
+<ol>
+<li>root saga：</li>
+</ol>
+<p>  立即启动的所有sagas的唯一入口。在store.js的createStore之后立即执行</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createStore</span>,<span style="color:#a6e22e">applyMiddleware</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">rootReducer</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../reducers/root_reducer&#39;</span>
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">createSagaMiddleware</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux-saga&#39;</span>
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">rootSaga</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../sagas&#39;</span>;
+
+<span style="color:#75715e">//Store初期化
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">initialState</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">constText</span><span style="color:#f92672">:</span>{
+      <span style="color:#a6e22e">xxx</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">yyy</span>,     
+    },
+}
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sagaMiddleware</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createSagaMiddleware</span>()
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span><span style="color:#f92672">=</span> <span style="color:#a6e22e">createStore</span>(
+    <span style="color:#a6e22e">rootReducer</span>,
+    <span style="color:#a6e22e">initialState</span>,
+    <span style="color:#a6e22e">applyMiddleware</span>(<span style="color:#a6e22e">sagaMiddleware</span>)    
+)
+<span style="color:#a6e22e">sagaMiddleware</span>.<span style="color:#a6e22e">run</span>(<span style="color:#a6e22e">rootSaga</span>)
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">store</span>;
+</code></pre></div><ol start="2">
+<li>watcher saga</li>
+</ol>
+<p>  监听被dispatch的actions，当接收到action或者知道其被触发时，调用worker saga执行任务</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">takeLatest</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux-saga/effects&#39;</span>
+<span style="color:#66d9ef">function</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">mySaga</span>() {
+  <span style="color:#66d9ef">yield</span> <span style="color:#a6e22e">takeLatest</span>(<span style="color:#e6db74">&#34;Get_UserInfo&#34;</span>,<span style="color:#a6e22e">sagaGetUser</span>);  
+}
+</code></pre></div><p>  注意，这里的takeLatest辅助函数会取消当前正在执行的任务并重新启动另一个新的 worker saga。<br>
+  另一个常用到是takeEvery，同时执行多个。</p>
+<ol start="3">
+<li>worker saga</li>
+</ol>
+<p>  执行具体的逻辑处理，如进行异步请求，处理返回结果等</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">call</span>, <span style="color:#a6e22e">put</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;redux-saga/effects&#39;</span>
+<span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">API</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../api/api&#39;</span>
+
+<span style="color:#66d9ef">function</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">sagaGetUser</span>(<span style="color:#a6e22e">action</span>) {
+  <span style="color:#66d9ef">try</span> {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bizResponse</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">yield</span> <span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">API</span>.<span style="color:#a6e22e">GetXXXApi</span>, <span style="color:#a6e22e">action</span>.<span style="color:#a6e22e">payload</span>)
+    <span style="color:#66d9ef">yield</span> <span style="color:#a6e22e">put</span>({
+      <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;LOAD_SUCCESSED&#39;</span>,
+      <span style="color:#a6e22e">payload</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">bizResponse</span>.<span style="color:#a6e22e">data</span>
+    })
+  } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">e</span>) {
+  }
+}
+
+</code></pre></div><p>  注意，worker saga的function后面要加*，调用任何函数前要加yield。<br>
+  因为mySaga实际上是迭代器。</p>
+<p>  常见effect的用法</p>
+<ol>
+<li>call 异步阻塞调用</li>
+<li>fork 异步非阻塞调用，无阻塞的执行fn，执行fn时，不会暂停Generator</li>
+<li>put 相当于dispatch，分发一个action</li>
+</ol>
+<p>阻塞<br>
+  阻塞调用是指调用结果返回之前，当前线程会被挂起（线程进入非可执行状态，在这个状态下，cpu不会给线程分配时间片，即线程暂停运行）。函数只有在得到结果之后才会返回。  <br>
+  有人也许会把阻塞调用和同步调用等同起来，实际上他是不同的。对于同步调用来说，很多时候当前线程还是激活的，只是从逻辑上当前函数没有返回而已。 例如，我们在socket中调用recv函数，如果缓冲区中没有数据，这个函数就会一直等待，直到有数据才返回。而此时，当前线程还会继续处理各种各样的消息。</p>
+<p>  快递的例子：比如到你某个时候到A楼一层（假如是内核缓冲区）取快递，但是你不知道快递什么时候过来，你又不能干别的事，只能死等着。但你可以睡觉（进程处于休眠状态），因为你知道快递把货送来时一定会给你打个电话（假定一定能叫醒你）。</p>
+<p>非阻塞<br>
+  非阻塞和阻塞的概念相对应，指在不能立刻得到结果之前，该函数不会阻塞当前线程，而会立刻返回。</p>
+<p>  还是等快递的例子：如果用忙轮询的方法，每隔5分钟到A楼一层(内核缓冲区）去看快递来了没有。如果没来，立即返回。而快递来了，就放在A楼一层，等你去取。</p>
+<h2 id="react-route">React-Route</h2>
+<p>基本用法：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Router</span>, <span style="color:#a6e22e">Route</span>, <span style="color:#a6e22e">hashHistory</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-router&#39;</span>;
+
+&lt;<span style="color:#f92672">Router</span> <span style="color:#a6e22e">history</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">hashHistory</span>}&gt;
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">App</span>}/&gt;
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Repos</span>}/&gt;
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">About</span>}/&gt;
+&lt;/<span style="color:#f92672">Router</span>&gt;
+</code></pre></div><h3 id="嵌套路由">嵌套路由</h3>
+<p>把一个&lt;Router&gt;嵌套在另一个&lt;Router&gt;&lt;/Router&gt;之内，就成为了他的子组件。直接用this.props.chilren就可以遍历渲染出所有子组件。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Router</span>, <span style="color:#a6e22e">Route</span>, <span style="color:#a6e22e">hashHistory</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-router&#39;</span>;
+
+&lt;<span style="color:#f92672">Router</span> <span style="color:#a6e22e">history</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">hashHistory</span>}&gt;
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">App</span>}&gt;
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Repos</span>}/&gt;
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">About</span>}/&gt;
+  &lt;/<span style="color:#f92672">Route</span>&gt;
+&lt;/<span style="color:#f92672">Router</span>&gt;
+</code></pre></div><h3 id="path-属性-parameter">path 属性 （Parameter）</h3>
+<p>注意path=&rdquo;/repos/:userName/:repoName&rdquo; ，当在浏览器地址中输入&hellip;/repos/reactjs/react-router时，可以直接路由到这里定义的子组件，同时把&rsquo;reactjs&rsquo;和&rsquo;react-router&rsquo;当作this.props.userName和this.props.repoName的值。所以，path的功能就是既可以定义路由，又直接定义了参数，方便获得URL各阶层的值作为参数值。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">render</span>((
+  &lt;<span style="color:#f92672">Router</span> <span style="color:#a6e22e">history</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">hashHistory</span>}&gt;
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">App</span>}&gt;
+      &lt;<span style="color:#f92672">IndexRoute</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Home</span>}/&gt;
+      &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Repos</span>}&gt;
+        &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos/:userName/:repoName&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Repo</span>}/&gt;
+      &lt;/<span style="color:#f92672">Route</span>&gt;
+      &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">About</span>}/&gt;
+    &lt;/<span style="color:#f92672">Route</span>&gt;
+  &lt;/<span style="color:#f92672">Router</span>&gt;
+), document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;app&#39;</span>))
+</code></pre></div><p>path属性可以使用通配符。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx">&lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/hello/:name&#34;</span>&gt;
+<span style="color:#75715e">// 匹配 /hello/michael
+</span><span style="color:#75715e">// 匹配 /hello/ryan
+</span><span style="color:#75715e"></span>
+&lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/hello(/:name)&#34;</span>&gt;
+<span style="color:#75715e">// 匹配 /hello
+</span><span style="color:#75715e">// 匹配 /hello/michael
+</span><span style="color:#75715e">// 匹配 /hello/ryan
+</span><span style="color:#75715e"></span>
+&lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/files/*.*&#34;</span>&gt;
+<span style="color:#75715e">// 匹配 /files/hello.jpg
+</span><span style="color:#75715e">// 匹配 /files/hello.html
+</span><span style="color:#75715e"></span>
+&lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/files/*&#34;</span>&gt;
+<span style="color:#75715e">// 匹配 /files/ 
+</span><span style="color:#75715e">// 匹配 /files/a
+</span><span style="color:#75715e">// 匹配 /files/a/b
+</span><span style="color:#75715e"></span>
+&lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/**/*.jpg&#34;</span>&gt;
+<span style="color:#75715e">// 匹配 /files/hello.jpg
+</span><span style="color:#75715e">// 匹配 /files/path/to/file.jpg
+</span></code></pre></div><p>通配符的规则<br>
+（1）:paramName<br>
+  :paramName匹配URL的一个部分，直到遇到下一个/、?、#为止。这个路径参数可以通过this.props.params.paramName取出。</p>
+<p>（2）()<br>
+  ()表示URL的这个部分是可选的。</p>
+<p>（3）*<br>
+  *匹配任意字符，直到模式里面的下一个字符为止。匹配方式是非贪婪模式。</p>
+<p>（4） **<br>
+  ** 匹配任意字符，直到下一个/、?、#为止。匹配方式是贪婪模式</p>
+<p>path属性也可以使用相对路径（不以/开头），匹配时就会相对于父组件的路径。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"> &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Repos</span>}&gt;
+        &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos/:userName/:repoName&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Repo</span>}/&gt;
+ &lt;/<span style="color:#f92672">Route</span>&gt;
+ <span style="color:#75715e">//使用相对路径：
+</span><span style="color:#75715e"></span> &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Repos</span>}&gt;
+        &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;:userName/:repoName&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Repo</span>}/&gt;
+ &lt;/<span style="color:#f92672">Route</span>&gt;
+</code></pre></div><p>路由匹配规则是从上到下执行，一旦发现匹配，就不再其余的规则了，所以要注意：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx">&lt;<span style="color:#f92672">Router</span>&gt;
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/:userName/:id&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">UserPage</span>}/&gt;
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about/me&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">About</span>}/&gt;
+&lt;/<span style="color:#f92672">Router</span>&gt;
+</code></pre></div><p>路由匹配到上面就Over了，所以要<strong>把带参数的Route放到最底部。</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx">&lt;<span style="color:#f92672">Router</span>&gt;
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about/me&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">About</span>}/&gt;
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/:userName/:id&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">UserPage</span>}/&gt;
+&lt;/<span style="color:#f92672">Router</span>&gt;
+</code></pre></div><h2 id="indexroute-组件">IndexRoute 组件</h2>
+<p>在根路径&rdquo;/&ldquo;下，因为子组件没有被加载，所以输入根目录是无法加载home组件的。有两个解决方案</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#75715e">// Index.js
+</span><span style="color:#75715e"></span>&lt;<span style="color:#f92672">Router</span> <span style="color:#a6e22e">history</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">hashHistory</span>}&gt;
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">App</span>}&gt;
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/home&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Home</span>}/&gt;
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Repos</span>}/&gt;
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">About</span>}/&gt;
+  &lt;/<span style="color:#f92672">Route</span>&gt;
+&lt;/<span style="color:#f92672">Router</span>&gt;
+
+<span style="color:#75715e">// app.js
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">render</span>() {
+  <span style="color:#66d9ef">return</span> (
+    &lt;<span style="color:#f92672">div</span>&gt;
+      &lt;<span style="color:#f92672">h1</span>&gt;<span style="color:#a6e22e">React</span> <span style="color:#a6e22e">Router</span> <span style="color:#a6e22e">Tutorial</span>&lt;/<span style="color:#f92672">h1</span>&gt;
+      &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav&#34;</span>&gt;
+        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">NavLink</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/home&#34;</span>&gt;<span style="color:#a6e22e">Home</span>&lt;/<span style="color:#f92672">NavLink</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">NavLink</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span>&gt;<span style="color:#a6e22e">About</span>&lt;/<span style="color:#f92672">NavLink</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">NavLink</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span>&gt;<span style="color:#a6e22e">Repos</span>&lt;/<span style="color:#f92672">NavLink</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+      &lt;/<span style="color:#f92672">ul</span>&gt;
+      {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">children</span>}
+    &lt;/<span style="color:#f92672">div</span>&gt;
+  )
+}
+</code></pre></div><p>方案一：用 {this.props.children || &lt;Home/&gt;}</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#75715e">// Index.js
+</span><span style="color:#75715e"></span>&lt;<span style="color:#f92672">Router</span> <span style="color:#a6e22e">history</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">hashHistory</span>}&gt;
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">App</span>}&gt;
+    {<span style="color:#75715e">/*这里把Home去掉*/</span>}
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Repos</span>}/&gt;
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">About</span>}/&gt;
+  &lt;/<span style="color:#f92672">Route</span>&gt;
+&lt;/<span style="color:#f92672">Router</span>&gt;
+
+<span style="color:#75715e">// app.js
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">render</span>() {
+  <span style="color:#66d9ef">return</span> (
+    &lt;<span style="color:#f92672">div</span>&gt;
+      &lt;<span style="color:#f92672">h1</span>&gt;<span style="color:#a6e22e">React</span> <span style="color:#a6e22e">Router</span> <span style="color:#a6e22e">Tutorial</span>&lt;/<span style="color:#f92672">h1</span>&gt;
+      &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav&#34;</span>&gt;
+         {<span style="color:#75715e">/*指定Home的路径为根目录*/</span>}
+        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">NavLink</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;<span style="color:#a6e22e">Home</span>&lt;/<span style="color:#f92672">NavLink</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">NavLink</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span>&gt;<span style="color:#a6e22e">About</span>&lt;/<span style="color:#f92672">NavLink</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">NavLink</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span>&gt;<span style="color:#a6e22e">Repos</span>&lt;/<span style="color:#f92672">NavLink</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+      &lt;/<span style="color:#f92672">ul</span>&gt;
+      {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">children</span> <span style="color:#f92672">||</span> &lt;<span style="color:#f92672">Home</span>/&gt;}
+    &lt;/<span style="color:#f92672">div</span>&gt;
+  )
+}
+</code></pre></div><p>方案二：用IndexRoute（推荐）</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#75715e">// Index.js
+</span><span style="color:#75715e"></span>&lt;<span style="color:#f92672">Router</span> <span style="color:#a6e22e">history</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">hashHistory</span>}&gt;
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">App</span>}&gt;
+    &lt;<span style="color:#f92672">IndexRoute</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Home</span>}/&gt;
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Repos</span>}/&gt;
+    &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">About</span>}/&gt;
+  &lt;/<span style="color:#f92672">Route</span>&gt;
+&lt;/<span style="color:#f92672">Router</span>&gt;
+
+<span style="color:#75715e">// app.js
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">render</span>() {
+  <span style="color:#66d9ef">return</span> (
+    &lt;<span style="color:#f92672">div</span>&gt;
+      &lt;<span style="color:#f92672">h1</span>&gt;<span style="color:#a6e22e">React</span> <span style="color:#a6e22e">Router</span> <span style="color:#a6e22e">Tutorial</span>&lt;/<span style="color:#f92672">h1</span>&gt;
+      &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav&#34;</span>&gt;
+        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">NavLink</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;<span style="color:#a6e22e">Home</span>&lt;/<span style="color:#f92672">NavLink</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">NavLink</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span>&gt;<span style="color:#a6e22e">About</span>&lt;/<span style="color:#f92672">NavLink</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">NavLink</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span>&gt;<span style="color:#a6e22e">Repos</span>&lt;/<span style="color:#f92672">NavLink</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+      &lt;/<span style="color:#f92672">ul</span>&gt;
+      {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">children</span>}
+    &lt;/<span style="color:#f92672">div</span>&gt;
+  )
+}
+</code></pre></div><p>IndexRoute是显式指定Home是根路由的子组件，即指定默认情况下加载的子组件。<br>
+注意，IndexRoute组件没有路径参数path。</p>
+<h2 id="redirect-组件-路由跳转">Redirect 组件 路由跳转</h2>
+<p><!-- raw HTML omitted -->组件用于路由的跳转，即用户访问一个路由，会自动跳转到另一个路由。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx">&lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inbox&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Inbox</span>}&gt;
+  {<span style="color:#75715e">/* 从 /inbox/messages/:id 跳转到 /messages/:id */</span>}
+  <span style="color:#960050;background-color:#1e0010">＜</span><span style="color:#a6e22e">Redirect</span> <span style="color:#a6e22e">from</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;messages/:id&#34;</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/messages/:id&#34;</span> <span style="color:#f92672">/&gt;</span>
+&lt;/<span style="color:#f92672">Route</span>&gt;
+</code></pre></div><p>访问/inbox/messages/5，会自动跳转到/messages/5</p>
+<h2 id="indexredirect-组件-根目录路由跳转">IndexRedirect 组件 根目录路由跳转</h2>
+<p>IndexRedirect组件用于访问根路由的时候，将用户重定向到某个子组件。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx">&lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">App</span>}&gt;
+  <span style="color:#960050;background-color:#1e0010">＜</span><span style="color:#a6e22e">IndexRedirect</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/welcome&#34;</span> <span style="color:#f92672">/&gt;</span>
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;welcome&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">Welcome</span>} /&gt;
+  &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;about&#34;</span> <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">About</span>} /&gt;
+&lt;/<span style="color:#f92672">Route</span>&gt;
+</code></pre></div><h2 id="link-a元素的react-版">Link &lt;a&gt;元素的React 版</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">render</span>() {
+  <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav&#34;</span>&gt;
+      &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span>&gt;<span style="color:#a6e22e">About</span>&lt;/<span style="color:#f92672">Link</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span>&gt;<span style="color:#a6e22e">Repos</span>&lt;/<span style="color:#f92672">Link</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;/<span style="color:#f92672">ul</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+}
+<span style="color:#75715e">//可以使用activeStyle属性 相当于style
+</span><span style="color:#75715e"></span>&lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span> <span style="color:#a6e22e">activeStyle</span><span style="color:#f92672">=</span>{{<span style="color:#a6e22e">color</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>}}&gt;<span style="color:#a6e22e">About</span>&lt;/<span style="color:#f92672">Link</span>&gt;
+&lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span> <span style="color:#a6e22e">activeStyle</span><span style="color:#f92672">=</span>{{<span style="color:#a6e22e">color</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>}}&gt;<span style="color:#a6e22e">Repos</span>&lt;/<span style="color:#f92672">Link</span>&gt;
+<span style="color:#75715e">//也可以使用activeClassName属性 相当于class
+</span><span style="color:#75715e"></span>&lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span> <span style="color:#a6e22e">activeClassName</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;<span style="color:#a6e22e">About</span>&lt;/<span style="color:#f92672">Link</span>&gt;
+&lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/repos&#34;</span> <span style="color:#a6e22e">activeClassName</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;<span style="color:#a6e22e">Repos</span>&lt;/<span style="color:#f92672">Link</span>&gt;
+</code></pre></div><h2 id="indexlink-根目录的link">IndexLink 根目录的Link</h2>
+<p>如果链接到根路由/，不要使用Link组件，而要使用IndexLink组件。这是因为对于根路由来说，activeStyle和activeClassName会失效。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx">&lt;<span style="color:#f92672">IndexLink</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#a6e22e">activeClassName</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;<span style="color:#a6e22e">Home</span>&lt;/<span style="color:#f92672">IndexLink</span>&gt;
+</code></pre></div><p>上面代码中，根路由只会在精确匹配到根目录时，才具有activeClassName。</p>
+<p>另一种方法是使用Link组件的onlyActiveOnIndex属性，也能达到同样效果。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx">&lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#a6e22e">activeClassName</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span> <span style="color:#a6e22e">onlyActiveOnIndex</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">true</span>}&gt; <span style="color:#a6e22e">Home</span> &lt;/<span style="color:#f92672">Link</span>&gt;
+</code></pre></div><p>实际上，IndexLink就是对Link组件的onlyActiveOnIndex属性的包装。</p>
+<h2 id="history">History</h2>
+<p>history 知道如何去监听浏览器地址栏的变化， 并解析这个 URL 转化为 location 对象， 然后 router 使用它匹配到路由，最后正确地渲染对应的组件.</p>
+<ul>
+<li>
+<p>Hash history 使用 URL 中的 hash（#）部分去创建形如 example.com/#/some/path 的路由。</p>
+</li>
+<li>
+<p>Browser history 是使用 React Router 的应用推荐的 history。它使用浏览器中的 History API 用于处理 URL，创建一个像 example.com/some/path这样真实的 URL 。 <br>
+使用这个时要注意，index.html中的href比如得用绝对路径&rdquo;/index.css&rdquo;，并且要在<code>package.json</code>的webpack-dev-server后加上<code>--history-api-fallback</code>如：<br>
+<code>&quot;start&quot;: &quot;webpack-dev-server --inline --content-base . --history-api-fallback&quot;</code></p>
+</li>
+<li>
+<p>createMemoryHistory 主要用于服务器渲染。它创建一个内存中的history对象，不与浏览器URL互动。</p>
+</li>
+</ul>
+
+</div>
+
+
+  </main>
+
+  <footer>
+  <div>
+    &copy; Jed Wu 2020
+
+    &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+    
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>

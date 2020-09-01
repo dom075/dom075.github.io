@@ -89,6 +89,8 @@
         <li>
           <a href="/java/">Java</a>
         </li><li>
+          <a href="/javascript/">JavaScript</a>
+        </li><li>
           <a href="/python/">Python</a>
         </li><li>
           <a href="/about/">About</a>
@@ -119,7 +121,42 @@
   <div class="posts">
       <article class="post">
         <h1 class="post-title">
-          <a href="https://dom075.github.io/python/day01_15/python_%E7%AC%AC5%E5%A4%A9_from_import/">Python 第5天 from import</a>
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC7%E5%A4%A9_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">Python 第7天 数据结构</a>
+        </h1>
+
+        <div class="post-date">
+          <time datetime="2020-06-07T17:51:56&#43;0800">Jun 7, 2020</time> &middot; 6 min read
+        </div>
+
+        <div>
+          字符串 对于字符串，最重要的一点是，字符串是不可变对象，如下代码输出的依然是abc，a没有被替换。
+a = &#39;abc&#39; a.replace(&#39;a&#39;,&#39;A&#39;) print(a) #输出：abc 为什么呢，因为a是变量，&lsquo;abc&rsquo;才是字符串对象。a.replace只是把替换了A之后返回出去&rsquo;Abc&rsquo;这个对象，元对象&rsquo;abc&rsquo;没有变动。对比以下代码：
+        </div>
+
+        <div class="read-more-link">
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC7%E5%A4%A9_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">Read More</a>
+        </div>
+      </article>
+      <article class="post">
+        <h1 class="post-title">
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC6%E5%A4%A9_%E6%96%B9%E6%B3%95/">Python 第6天 方法</a>
+        </h1>
+
+        <div class="post-date">
+          <time datetime="2020-06-06T17:51:56&#43;0800">Jun 6, 2020</time> &middot; 4 min read
+        </div>
+
+        <div>
+          方法 方法定义  用def关键字来申明方法。  def fac(num): result = 1 for n in range(1, num + 1): result *= n return result m = int(input(&#39;m = &#39;)) n = int(input(&#39;n = &#39;)) print(fac(m) // fac(n) // fac(m - n)) Python可以重复定义方法（后面的声明覆盖前面的声明），调用时选取最后的声明。  def foo(): print(&#39;hello, world!
+        </div>
+
+        <div class="read-more-link">
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC6%E5%A4%A9_%E6%96%B9%E6%B3%95/">Read More</a>
+        </div>
+      </article>
+      <article class="post">
+        <h1 class="post-title">
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC5%E5%A4%A9_from_import/">Python 第5天 from import</a>
         </h1>
 
         <div class="post-date">
@@ -132,12 +169,12 @@ import datetime print(datetime.datetime.now()) 是引入整个datetime包
         </div>
 
         <div class="read-more-link">
-          <a href="https://dom075.github.io/python/day01_15/python_%E7%AC%AC5%E5%A4%A9_from_import/">Read More</a>
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC5%E5%A4%A9_from_import/">Read More</a>
         </div>
       </article>
       <article class="post">
         <h1 class="post-title">
-          <a href="https://dom075.github.io/python/day01_15/python_%E7%AC%AC4%E5%A4%A9_for%E5%BE%AA%E7%8E%AF/">Python 第4天 for循环</a>
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC4%E5%A4%A9_for%E5%BE%AA%E7%8E%AF/">Python 第4天 for循环</a>
         </h1>
 
         <div class="post-date">
@@ -149,12 +186,12 @@ import datetime print(datetime.datetime.now()) 是引入整个datetime包
         </div>
 
         <div class="read-more-link">
-          <a href="https://dom075.github.io/python/day01_15/python_%E7%AC%AC4%E5%A4%A9_for%E5%BE%AA%E7%8E%AF/">Read More</a>
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC4%E5%A4%A9_for%E5%BE%AA%E7%8E%AF/">Read More</a>
         </div>
       </article>
       <article class="post">
         <h1 class="post-title">
-          <a href="https://dom075.github.io/python/day01_15/python_%E7%AC%AC3%E5%A4%A9_if/">Python 第3天 If</a>
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC3%E5%A4%A9_if/">Python 第3天 If</a>
         </h1>
 
         <div class="post-date">
@@ -167,12 +204,12 @@ if x &gt; 1: y = 3 * x - 5 elif x &gt;= -1: y = x + 2 else: y = 5 * x + 3
         </div>
 
         <div class="read-more-link">
-          <a href="https://dom075.github.io/python/day01_15/python_%E7%AC%AC3%E5%A4%A9_if/">Read More</a>
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC3%E5%A4%A9_if/">Read More</a>
         </div>
       </article>
       <article class="post">
         <h1 class="post-title">
-          <a href="https://dom075.github.io/python/day01_15/python_%E7%AC%AC2%E5%A4%A9_%E5%8F%98%E9%87%8F/">Python 第2天 变量</a>
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC2%E5%A4%A9_%E5%8F%98%E9%87%8F/">Python 第2天 变量</a>
         </h1>
 
         <div class="post-date">
@@ -184,12 +221,12 @@ if x &gt; 1: y = 3 * x - 5 elif x &gt;= -1: y = x + 2 else: y = 5 * x + 3
         </div>
 
         <div class="read-more-link">
-          <a href="https://dom075.github.io/python/day01_15/python_%E7%AC%AC2%E5%A4%A9_%E5%8F%98%E9%87%8F/">Read More</a>
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC2%E5%A4%A9_%E5%8F%98%E9%87%8F/">Read More</a>
         </div>
       </article>
       <article class="post">
         <h1 class="post-title">
-          <a href="https://dom075.github.io/python/day01_15/python_%E7%AC%AC1%E5%A4%A9_helloworld/">Python 第1天 HelloWorld</a>
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC1%E5%A4%A9_helloworld/">Python 第1天 HelloWorld</a>
         </h1>
 
         <div class="post-date">
@@ -202,7 +239,7 @@ if x &gt; 1: y = 3 * x - 5 elif x &gt;= -1: y = x + 2 else: y = 5 * x + 3
         </div>
 
         <div class="read-more-link">
-          <a href="https://dom075.github.io/python/day01_15/python_%E7%AC%AC1%E5%A4%A9_helloworld/">Read More</a>
+          <a href="https://dom075.github.io/python/python_%E7%AC%AC1%E5%A4%A9_helloworld/">Read More</a>
         </div>
       </article>
   </div>
